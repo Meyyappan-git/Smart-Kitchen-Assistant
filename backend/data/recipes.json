@@ -1,0 +1,2270 @@
+[
+  {
+    "id": "rec_001",
+    "title": "Creamy Mushroom Pasta",
+    "description": "Rich, silky fettuccine tossed in a savory garlic cream mushroom sauce with parmesan herbs.",
+    "cuisine": "Italian",
+    "category": "Dinner",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "difficulty": "Easy",
+    "calories": 480,
+    "cost_inr": 220,
+    "rating": 4.9,
+    "reviews_count": 142,
+    "diet_tags": [
+      "Vegetarian",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "mushrooms",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "pasta",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "heavy cream",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "garlic",
+        "amount": 4,
+        "unit": "cloves"
+      },
+      {
+        "name": "butter",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "cheese",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Boil pasta in salted water until al dente. Reserve half a cup of pasta water.",
+      "In a skillet, melt butter over medium heat and sauté minced garlic until fragrant.",
+      "Add sliced mushrooms and sauté for 6-8 minutes until golden browned.",
+      "Pour in the heavy cream and simmer gently for 2 minutes.",
+      "Toss cooked pasta and parmesan cheese with the sauce. Season with black pepper and parsley."
+    ]
+  },
+  {
+    "id": "rec_002",
+    "title": "Paneer Butter Masala",
+    "description": "Velvety spiced tomato cashew gravy with succulent cubes of fresh paneer.",
+    "cuisine": "Indian",
+    "category": "Dinner",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 25,
+    "difficulty": "Medium",
+    "calories": 520,
+    "cost_inr": 240,
+    "rating": 4.8,
+    "reviews_count": 189,
+    "diet_tags": [
+      "Vegetarian",
+      "Eggless",
+      "High-Protein"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "paneer",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 4,
+        "unit": "items"
+      },
+      {
+        "name": "onions",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "butter",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "name": "heavy cream",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "name": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "amount": 4,
+        "unit": "cloves"
+      }
+    ],
+    "steps": [
+      "Sauté onions, tomatoes, ginger and garlic in butter, then blend to a smooth puree.",
+      "Cook the spiced puree in a pan with garam masala and red chili powder until fragrant.",
+      "Stir in heavy cream and fresh paneer cubes; simmer on low heat for 5 minutes.",
+      "Garnish with a dollop of butter and fresh coriander."
+    ]
+  },
+  {
+    "id": "rec_003",
+    "title": "Classic Shakshuka",
+    "description": "North African poached eggs in a vibrant spiced tomato, bell pepper, and garlic sauce.",
+    "cuisine": "Mediterranean",
+    "category": "Breakfast",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "difficulty": "Easy",
+    "calories": 320,
+    "cost_inr": 130,
+    "rating": 4.7,
+    "reviews_count": 96,
+    "diet_tags": [
+      "Vegetarian",
+      "High-Protein"
+    ],
+    "allergens": [
+      "Eggs"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "eggs",
+        "amount": 3,
+        "unit": "items"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 3,
+        "unit": "items"
+      },
+      {
+        "name": "bell pepper",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      },
+      {
+        "name": "olive oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Heat olive oil in a skillet. Sauté chopped onions, bell peppers, and minced garlic until tender.",
+      "Add chopped tomatoes, cumin, paprika, salt and pepper. Simmer for 10 minutes.",
+      "Make 3 small wells in the sauce and gently crack the eggs into each well.",
+      "Cover the skillet and cook on low for 5-7 minutes until egg whites are set and yolks are runny."
+    ]
+  },
+  {
+    "id": "rec_004",
+    "title": "Garlic Butter Spinach & Mushrooms",
+    "description": "Quick, keto-friendly skillet of tender spinach and caramelized brown mushrooms.",
+    "cuisine": "Continental",
+    "category": "Lunch",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "difficulty": "Easy",
+    "calories": 180,
+    "cost_inr": 110,
+    "rating": 4.6,
+    "reviews_count": 78,
+    "diet_tags": [
+      "Vegetarian",
+      "Low-Carb",
+      "Quick",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "spinach",
+        "amount": 1,
+        "unit": "bunches"
+      },
+      {
+        "name": "mushrooms",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "amount": 4,
+        "unit": "cloves"
+      },
+      {
+        "name": "butter",
+        "amount": 25,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Melt butter in a pan over medium-high heat.",
+      "Add crushed garlic and sliced mushrooms. Cook until mushrooms turn deep golden brown.",
+      "Toss in washed fresh spinach and sauté for 2 minutes until wilted.",
+      "Season with salt, cracked pepper and serve hot."
+    ]
+  },
+  {
+    "id": "rec_005",
+    "title": "Fresh Tomato Basil Pasta",
+    "description": "Bright Italian pasta with sweet bursting tomatoes, fragrant fresh basil, and extra virgin olive oil.",
+    "cuisine": "Italian",
+    "category": "Lunch",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "difficulty": "Easy",
+    "calories": 390,
+    "cost_inr": 140,
+    "rating": 4.8,
+    "reviews_count": 115,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "Eggless"
+    ],
+    "allergens": [
+      "Gluten"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1621996346565-e3d5d6281781?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "pasta",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 4,
+        "unit": "items"
+      },
+      {
+        "name": "garlic",
+        "amount": 4,
+        "unit": "cloves"
+      },
+      {
+        "name": "olive oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Boil pasta until al dente.",
+      "In a pan, warm olive oil and gently fry sliced garlic until golden.",
+      "Add chopped ripe tomatoes and simmer until juices burst into a natural glossy sauce.",
+      "Toss the pasta directly in the sauce with torn basil and freshly cracked pepper."
+    ]
+  },
+  {
+    "id": "rec_006",
+    "title": "Vegetable Fried Rice",
+    "description": "Fragrant wok-tossed basmati rice with crunchy carrots, bell peppers, peas, and garlic.",
+    "cuisine": "Asian",
+    "category": "Dinner",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 12,
+    "difficulty": "Easy",
+    "calories": 380,
+    "cost_inr": 120,
+    "rating": 4.7,
+    "reviews_count": 89,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "Eggless"
+    ],
+    "allergens": [
+      "Soy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "carrots",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "bell pepper",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      },
+      {
+        "name": "soy sauce",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Cook rice and cool completely (or use leftover rice).",
+      "In a hot wok, heat oil and stir fry garlic and onions for 1 minute.",
+      "Add diced carrots and bell peppers, cooking on high heat for 3 minutes.",
+      "Add rice, soy sauce, and white pepper. Toss quickly until heated through."
+    ]
+  },
+  {
+    "id": "rec_007",
+    "title": "Berry Banana Smoothie Bowl",
+    "description": "Thick chilled strawberry banana puree topped with fruit slices and crunchy seeds.",
+    "cuisine": "Continental",
+    "category": "Breakfast",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 0,
+    "difficulty": "Easy",
+    "calories": 260,
+    "cost_inr": 110,
+    "rating": 4.9,
+    "reviews_count": 130,
+    "diet_tags": [
+      "Vegetarian",
+      "Quick",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "bananas",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "strawberries",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "milk",
+        "amount": 150,
+        "unit": "ml"
+      },
+      {
+        "name": "curd",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Slice 1 banana and a few strawberries for topping.",
+      "Blend remaining banana, strawberries, milk, and curd into a thick frosty texture.",
+      "Pour into a bowl and garnish with reserved fruit slices."
+    ]
+  },
+  {
+    "id": "rec_008",
+    "title": "Aloo Gobi Masala",
+    "description": "Classic homestyle dry curry with roasted cauliflower florets and spiced tender potatoes.",
+    "cuisine": "Indian",
+    "category": "Lunch",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "difficulty": "Easy",
+    "calories": 290,
+    "cost_inr": 90,
+    "rating": 4.8,
+    "reviews_count": 102,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "Eggless"
+    ],
+    "allergens": [],
+    "image_url": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "potatoes",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "cauliflower",
+        "amount": 1,
+        "unit": "heads"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "name": "coriander",
+        "amount": 1,
+        "unit": "bunches"
+      }
+    ],
+    "steps": [
+      "Cut cauliflower into florets and potatoes into cubes.",
+      "Heat oil in a pan, sauté cumin seeds, onions, and ginger until translucent.",
+      "Add chopped tomatoes, turmeric, coriander powder, and chili powder.",
+      "Add cauliflower and potatoes, cover and simmer on low for 15 minutes until tender.",
+      "Finish with fresh coriander."
+    ]
+  },
+  {
+    "id": "rec_009",
+    "title": "Lemon Herb Grilled Chicken",
+    "description": "Juicy, tender chicken breast marinated with lemon zest, garlic, and fresh herbs.",
+    "cuisine": "Continental",
+    "category": "Dinner",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 15,
+    "difficulty": "Medium",
+    "calories": 420,
+    "cost_inr": 230,
+    "rating": 4.8,
+    "reviews_count": 164,
+    "diet_tags": [
+      "Non-Veg",
+      "High-Protein",
+      "Low-Carb"
+    ],
+    "allergens": [],
+    "image_url": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "lemon",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "garlic",
+        "amount": 4,
+        "unit": "cloves"
+      },
+      {
+        "name": "olive oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Pound chicken breast to even thickness.",
+      "Marinate with olive oil, lemon juice, grated garlic, salt, and black pepper for 15 minutes.",
+      "Sear on a hot grill pan for 6-7 minutes on each side until cooked through and nicely charred.",
+      "Rest for 5 minutes before slicing."
+    ]
+  },
+  {
+    "id": "rec_010",
+    "title": "Greek Cucumber & Tomato Salad",
+    "description": "Refreshing crisp Mediterranean salad with juicy tomatoes, crunchy cucumbers, and olive oil.",
+    "cuisine": "Mediterranean",
+    "category": "Lunch",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "difficulty": "Easy",
+    "calories": 160,
+    "cost_inr": 100,
+    "rating": 4.6,
+    "reviews_count": 55,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "Low-Carb",
+      "Quick",
+      "Eggless"
+    ],
+    "allergens": [],
+    "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "cucumber",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 3,
+        "unit": "items"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "olive oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "name": "lemon",
+        "amount": 1,
+        "unit": "items"
+      }
+    ],
+    "steps": [
+      "Dice cucumbers and ripe tomatoes into bite-sized chunks.",
+      "Thinly slice red onions.",
+      "Toss together in a bowl with extra virgin olive oil, fresh lemon juice, oregano, and salt.",
+      "Serve chilled immediately."
+    ]
+  },
+  {
+    "id": "rec_011",
+    "title": "Creamy Palak Paneer",
+    "description": "Cottage cheese cubes bathed in smooth, vibrant spiced spinach gravy.",
+    "cuisine": "Indian",
+    "category": "Dinner",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "difficulty": "Medium",
+    "calories": 440,
+    "cost_inr": 210,
+    "rating": 4.9,
+    "reviews_count": 210,
+    "diet_tags": [
+      "Vegetarian",
+      "Eggless",
+      "High-Protein"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "paneer",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "spinach",
+        "amount": 2,
+        "unit": "bunches"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "garlic",
+        "amount": 4,
+        "unit": "cloves"
+      },
+      {
+        "name": "butter",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "heavy cream",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Blanch spinach in boiling water for 2 minutes, then plunge into ice water and puree.",
+      "Melt butter, sauté onions, garlic, and chopped tomato with spices.",
+      "Pour in the spinach puree and simmer for 5 minutes.",
+      "Add paneer cubes and finish with a swirl of heavy cream."
+    ]
+  },
+  {
+    "id": "rec_012",
+    "title": "Egg Bhurji (Masala Scrambled Eggs)",
+    "description": "Fiery Indian scrambled eggs cooked with sautéed onions, tomatoes, and green chilies.",
+    "cuisine": "Indian",
+    "category": "Breakfast",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "difficulty": "Easy",
+    "calories": 280,
+    "cost_inr": 75,
+    "rating": 4.8,
+    "reviews_count": 140,
+    "diet_tags": [
+      "Non-Veg",
+      "High-Protein",
+      "Quick"
+    ],
+    "allergens": [
+      "Eggs"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "eggs",
+        "amount": 3,
+        "unit": "items"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "green chilies",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "butter",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Whisk eggs in a bowl with a pinch of salt.",
+      "In a pan, melt butter and sauté chopped onions and green chilies until lightly golden.",
+      "Add chopped tomatoes and turmeric; cook until softened.",
+      "Pour in whisked eggs and gently scramble on medium-low heat until fluffy and soft."
+    ]
+  },
+  {
+    "id": "rec_013",
+    "title": "Zucchini Tomato Gratin",
+    "description": "Layers of tender sliced zucchini and tomatoes baked with garlic and bubbly melted cheese.",
+    "cuisine": "Continental",
+    "category": "Dinner",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 25,
+    "difficulty": "Medium",
+    "calories": 310,
+    "cost_inr": 180,
+    "rating": 4.6,
+    "reviews_count": 48,
+    "diet_tags": [
+      "Vegetarian",
+      "Eggless",
+      "Low-Carb"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "zucchini",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 3,
+        "unit": "items"
+      },
+      {
+        "name": "cheese",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      },
+      {
+        "name": "olive oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Preheat oven or baking pan.",
+      "Arrange alternating slices of zucchini and tomatoes in a baking dish.",
+      "Drizzle with olive oil, minced garlic, herbs, and salt.",
+      "Top generously with shredded cheese and bake until vegetables are tender and cheese is bubbling golden brown."
+    ]
+  },
+  {
+    "id": "rec_014",
+    "title": "Golden French Toast",
+    "description": "Custard-dipped fluffy brioche slices cooked in golden butter, served with fresh fruit.",
+    "cuisine": "American",
+    "category": "Breakfast",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 8,
+    "difficulty": "Easy",
+    "calories": 360,
+    "cost_inr": 85,
+    "rating": 4.9,
+    "reviews_count": 180,
+    "diet_tags": [
+      "Quick"
+    ],
+    "allergens": [
+      "Eggs",
+      "Dairy",
+      "Gluten"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "bread",
+        "amount": 4,
+        "unit": "slices"
+      },
+      {
+        "name": "eggs",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "milk",
+        "amount": 60,
+        "unit": "ml"
+      },
+      {
+        "name": "butter",
+        "amount": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Whisk eggs, milk, cinnamon, and a pinch of sugar in a shallow dish.",
+      "Dip bread slices on both sides to absorb the mixture.",
+      "Melt butter in a skillet over medium heat.",
+      "Fry each side for 3 minutes until deep golden brown."
+    ]
+  },
+  {
+    "id": "rec_015",
+    "title": "Homestyle Dal Tadka",
+    "description": "Comforting yellow lentils tempered with ghee, cumin seeds, garlic, and red chilies.",
+    "cuisine": "Indian",
+    "category": "Lunch",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "difficulty": "Easy",
+    "calories": 310,
+    "cost_inr": 80,
+    "rating": 4.9,
+    "reviews_count": 230,
+    "diet_tags": [
+      "Vegetarian",
+      "High-Protein",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "lentils",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "garlic",
+        "amount": 5,
+        "unit": "cloves"
+      },
+      {
+        "name": "butter",
+        "amount": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Pressure cook or boil lentils until soft and mashable.",
+      "In a separate pan, melt butter/ghee and fry cumin, garlic, and onions.",
+      "Add diced tomatoes and spices, cooking until softened.",
+      "Pour tadka over cooked dal and simmer for 5 minutes."
+    ]
+  },
+  {
+    "id": "rec_016",
+    "title": "Mango Lassi",
+    "description": "Creamy, refreshing Indian yogurt drink blended with ripe sweet mangoes and cardamom.",
+    "cuisine": "Indian",
+    "category": "Snack",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 0,
+    "difficulty": "Easy",
+    "calories": 220,
+    "cost_inr": 90,
+    "rating": 4.9,
+    "reviews_count": 160,
+    "diet_tags": [
+      "Vegetarian",
+      "Quick",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "mango",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "curd",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "milk",
+        "amount": 50,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Peel and chop ripe sweet mango.",
+      "Combine mango, thick chilled curd, a splash of milk, and a pinch of cardamom in a blender.",
+      "Blend until smooth and frothy. Serve chilled."
+    ]
+  },
+  {
+    "id": "rec_017",
+    "title": "Creamy Mushroom Risotto",
+    "description": "Silky slow-cooked arborio rice infused with garlic, sautéed mushrooms, and parmesan.",
+    "cuisine": "Italian",
+    "category": "Dinner",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 25,
+    "difficulty": "Medium",
+    "calories": 450,
+    "cost_inr": 230,
+    "rating": 4.8,
+    "reviews_count": 82,
+    "diet_tags": [
+      "Vegetarian",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "rice",
+        "amount": 180,
+        "unit": "g"
+      },
+      {
+        "name": "mushrooms",
+        "amount": 180,
+        "unit": "g"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      },
+      {
+        "name": "butter",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "name": "cheese",
+        "amount": 35,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sauté mushrooms in 10g butter until browned, set aside.",
+      "In same pan, sweat onions and garlic in remaining butter.",
+      "Stir in rice and toast for 2 minutes.",
+      "Gradually add warm broth ladle by ladle, stirring constantly until creamy and tender.",
+      "Fold in cooked mushrooms and parmesan."
+    ]
+  },
+  {
+    "id": "rec_018",
+    "title": "Avocado & Sunny Poached Egg Toast",
+    "description": "Creamy mashed avocado seasoned with lime and chili flakes on artisanal sourdough with a rich runny egg.",
+    "cuisine": "Continental",
+    "category": "Breakfast",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 5,
+    "difficulty": "Easy",
+    "calories": 340,
+    "cost_inr": 150,
+    "rating": 4.9,
+    "reviews_count": 175,
+    "diet_tags": [
+      "High-Protein",
+      "Quick"
+    ],
+    "allergens": [
+      "Eggs",
+      "Gluten"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "avocado",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "bread",
+        "amount": 2,
+        "unit": "slices"
+      },
+      {
+        "name": "eggs",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "lemon",
+        "amount": 1,
+        "unit": "items"
+      }
+    ],
+    "steps": [
+      "Toast bread slices until deeply golden and crispy.",
+      "Mash avocado flesh with lemon juice, salt, and chili flakes.",
+      "Poach or fry eggs to desired doneness.",
+      "Spread avocado over toast and top with warm eggs."
+    ]
+  },
+  {
+    "id": "rec_019",
+    "title": "Crispy Paneer Tikka Skewers",
+    "description": "Char-grilled paneer cubes marinated in yogurt, ajwain, turmeric, and vibrant bell peppers.",
+    "cuisine": "Indian",
+    "category": "Snack",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 15,
+    "difficulty": "Medium",
+    "calories": 380,
+    "cost_inr": 200,
+    "rating": 4.9,
+    "reviews_count": 140,
+    "diet_tags": [
+      "Vegetarian",
+      "High-Protein",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "paneer",
+        "amount": 220,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "curd",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "butter",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Whisk curd with spices, ginger garlic paste, and lemon.",
+      "Coat paneer cubes, bell peppers, and onion chunks in the marinade.",
+      "Thread onto skewers and pan sear or roast until slightly charred around edges.",
+      "Brush with melted butter and sprinkle chaat masala."
+    ]
+  },
+  {
+    "id": "rec_020",
+    "title": "Chickpea Spinach Mediterranean Stew",
+    "description": "Hearty, nutrient-rich stew of protein chickpeas, tender spinach, and slow-simmered tomatoes.",
+    "cuisine": "Mediterranean",
+    "category": "Lunch",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "difficulty": "Easy",
+    "calories": 350,
+    "cost_inr": 110,
+    "rating": 4.7,
+    "reviews_count": 68,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "High-Protein",
+      "Eggless"
+    ],
+    "allergens": [],
+    "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "spinach",
+        "amount": 1,
+        "unit": "bunches"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 3,
+        "unit": "items"
+      },
+      {
+        "name": "garlic",
+        "amount": 4,
+        "unit": "cloves"
+      },
+      {
+        "name": "olive oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Warm olive oil in a deep pot and sauté minced garlic until golden.",
+      "Add chopped tomatoes and cumin, cooking into a sauce.",
+      "Stir in cooked chickpeas and 1 cup of vegetable broth; simmer for 10 minutes.",
+      "Stir in fresh spinach until wilted."
+    ]
+  },
+  {
+    "id": "rec_021",
+    "title": "Garlic Cheese Toast",
+    "description": "Crunchy toasted bread infused with roasted garlic butter and molten stringy cheese.",
+    "cuisine": "Continental",
+    "category": "Snack",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 7,
+    "difficulty": "Easy",
+    "calories": 290,
+    "cost_inr": 70,
+    "rating": 4.8,
+    "reviews_count": 92,
+    "diet_tags": [
+      "Vegetarian",
+      "Quick",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1619895092538-128341789043?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "bread",
+        "amount": 3,
+        "unit": "slices"
+      },
+      {
+        "name": "cheese",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "butter",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      }
+    ],
+    "steps": [
+      "Mash softened butter with minced garlic and herbs.",
+      "Spread generously over bread slices.",
+      "Top with shredded cheese.",
+      "Bake or pan-toast covered until cheese is bubbly and edges are crisp."
+    ]
+  },
+  {
+    "id": "rec_022",
+    "title": "Rich Cream of Tomato Soup",
+    "description": "Smooth, roasted tomato soup finished with a swirl of fresh cream and crunchy croutons.",
+    "cuisine": "Continental",
+    "category": "Dinner",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "difficulty": "Easy",
+    "calories": 210,
+    "cost_inr": 80,
+    "rating": 4.7,
+    "reviews_count": 84,
+    "diet_tags": [
+      "Vegetarian",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "tomatoes",
+        "amount": 5,
+        "unit": "items"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      },
+      {
+        "name": "heavy cream",
+        "amount": 40,
+        "unit": "ml"
+      },
+      {
+        "name": "butter",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sauté garlic and onions in butter.",
+      "Add chopped tomatoes, salt, sugar, and simmer for 15 minutes.",
+      "Blend with an immersion blender until velvety smooth.",
+      "Strain if desired, stir in heavy cream, and season with black pepper."
+    ]
+  },
+  {
+    "id": "rec_023",
+    "title": "Vegetable Pulao",
+    "description": "Aromatic long-grain basmati rice cooked with whole spices, carrots, green beans, and peas.",
+    "cuisine": "Indian",
+    "category": "Lunch",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "difficulty": "Easy",
+    "calories": 360,
+    "cost_inr": 110,
+    "rating": 4.8,
+    "reviews_count": 124,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "Eggless"
+    ],
+    "allergens": [],
+    "image_url": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "basmati rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "carrots",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "peas",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "olive oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Wash and soak basmati rice for 15 minutes.",
+      "Sauté sliced onions, whole spices, and chopped veggies in oil.",
+      "Add rice and water in a 1:2 ratio.",
+      "Cook covered on low heat until water is absorbed and grains are fluffy."
+    ]
+  },
+  {
+    "id": "rec_024",
+    "title": "Banana Oat Pancakes",
+    "description": "Naturally sweetened fluffy golden pancakes prepared with ripe bananas and a touch of butter.",
+    "cuisine": "American",
+    "category": "Breakfast",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "difficulty": "Easy",
+    "calories": 310,
+    "cost_inr": 70,
+    "rating": 4.8,
+    "reviews_count": 155,
+    "diet_tags": [
+      "Vegetarian",
+      "Quick"
+    ],
+    "allergens": [
+      "Eggs",
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "bananas",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "eggs",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "milk",
+        "amount": 40,
+        "unit": "ml"
+      },
+      {
+        "name": "butter",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Mash ripe bananas in a bowl until smooth.",
+      "Whisk in eggs and milk until a batter forms.",
+      "Ladle small circles onto a buttered skillet over medium heat.",
+      "Flip when bubbles appear on top, cooking until golden brown on both sides."
+    ]
+  },
+  {
+    "id": "rec_025",
+    "title": "South Indian Curd Rice (Thayir Sadam)",
+    "description": "Cooling, tempered rice folded into fresh curd with mustard seeds, ginger, and green chilies.",
+    "cuisine": "Indian",
+    "category": "Lunch",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 5,
+    "difficulty": "Easy",
+    "calories": 290,
+    "cost_inr": 60,
+    "rating": 4.9,
+    "reviews_count": 180,
+    "diet_tags": [
+      "Vegetarian",
+      "Quick",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "rice",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "amount": 180,
+        "unit": "g"
+      },
+      {
+        "name": "milk",
+        "amount": 40,
+        "unit": "ml"
+      },
+      {
+        "name": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "name": "green chilies",
+        "amount": 1,
+        "unit": "items"
+      }
+    ],
+    "steps": [
+      "Mash freshly cooked warm rice lightly with a spoon.",
+      "Mix in curd and milk with salt.",
+      "Temper mustard seeds, ginger, and green chili in a spoonful of oil.",
+      "Pour the seasoning over the curd rice and mix gently."
+    ]
+  },
+  {
+    "id": "rec_026",
+    "title": "Tofu Veggie Stir Fry",
+    "description": "High-protein crispy pan-fried tofu with colorful bell peppers and broccoli in a savory glaze.",
+    "cuisine": "Asian",
+    "category": "Dinner",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 12,
+    "difficulty": "Easy",
+    "calories": 310,
+    "cost_inr": 160,
+    "rating": 4.7,
+    "reviews_count": 65,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "High-Protein",
+      "Eggless"
+    ],
+    "allergens": [
+      "Soy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "broccoli",
+        "amount": 1,
+        "unit": "heads"
+      },
+      {
+        "name": "bell pepper",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "soy sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      }
+    ],
+    "steps": [
+      "Press tofu dry, cut into cubes, and pan-fry until crisp.",
+      "Sauté garlic, broccoli florets, and bell peppers in a wok for 3-4 minutes.",
+      "Add tofu and drizzle with soy sauce, cooking for 1 minute until glazed."
+    ]
+  },
+  {
+    "id": "rec_027",
+    "title": "Macaroni Cheese Bake",
+    "description": "Tender elbow pasta enveloped in a velvety cheddar cheese bechamel, baked to bubbly perfection.",
+    "cuisine": "American",
+    "category": "Dinner",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "difficulty": "Medium",
+    "calories": 520,
+    "cost_inr": 190,
+    "rating": 4.8,
+    "reviews_count": 135,
+    "diet_tags": [
+      "Vegetarian",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "pasta",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "milk",
+        "amount": 250,
+        "unit": "ml"
+      },
+      {
+        "name": "cheese",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "butter",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "name": "flour",
+        "amount": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Cook macaroni until al dente.",
+      "Make a roux by cooking butter and flour for 1 minute, then whisk in milk until smooth and thick.",
+      "Melt in shredded cheese and fold in pasta.",
+      "Transfer to dish and broil for 5 minutes until browned."
+    ]
+  },
+  {
+    "id": "rec_028",
+    "title": "Stuffed Bell Peppers",
+    "description": "Sweet bell peppers roasted with a spicy filling of spiced potatoes, onions, and melted cheese.",
+    "cuisine": "Mexican",
+    "category": "Lunch",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 25,
+    "difficulty": "Medium",
+    "calories": 330,
+    "cost_inr": 140,
+    "rating": 4.7,
+    "reviews_count": 52,
+    "diet_tags": [
+      "Vegetarian",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "bell pepper",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "potatoes",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "cheese",
+        "amount": 40,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Boil and mash potatoes with sautéed onions, cumin, and salt.",
+      "Halve bell peppers lengthwise and remove seeds.",
+      "Stuff peppers with potato mixture and top with cheese.",
+      "Bake or cook covered in skillet for 20 minutes."
+    ]
+  },
+  {
+    "id": "rec_029",
+    "title": "Mushroom Pepper Masala",
+    "description": "South-Indian chettinad spiced curry featuring button mushrooms and crushed black peppercorn.",
+    "cuisine": "Indian",
+    "category": "Dinner",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 18,
+    "difficulty": "Easy",
+    "calories": 240,
+    "cost_inr": 130,
+    "rating": 4.8,
+    "reviews_count": 94,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "Eggless"
+    ],
+    "allergens": [],
+    "image_url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "mushrooms",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      }
+    ],
+    "steps": [
+      "Sauté onions and garlic in oil until translucent.",
+      "Add tomatoes and cook until soft.",
+      "Add sliced mushrooms, bell pepper cubes, and fresh crushed pepper.",
+      "Cook on medium high for 6-8 minutes until mushrooms are coated and tender."
+    ]
+  },
+  {
+    "id": "rec_030",
+    "title": "Classic Grilled Cheese Sandwich",
+    "description": "Golden crispy toasted sourdough packed with gooey, melted cheddar and mozzarella cheese.",
+    "cuisine": "American",
+    "category": "Snack",
+    "prep_time_minutes": 3,
+    "cook_time_minutes": 6,
+    "difficulty": "Easy",
+    "calories": 380,
+    "cost_inr": 80,
+    "rating": 4.9,
+    "reviews_count": 210,
+    "diet_tags": [
+      "Vegetarian",
+      "Quick",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "bread",
+        "amount": 2,
+        "unit": "slices"
+      },
+      {
+        "name": "cheese",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "butter",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Butter one side of each bread slice.",
+      "Place cheese between unbuttered sides.",
+      "Grill in a skillet on medium-low heat until bread is golden and cheese is completely melted."
+    ]
+  },
+  {
+    "id": "rec_031",
+    "title": "Fresh Strawberry Milkshake",
+    "description": "Chilled, thick and refreshing milkshake made with fresh strawberries and pure vanilla milk.",
+    "cuisine": "Continental",
+    "category": "Snack",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 0,
+    "difficulty": "Easy",
+    "calories": 210,
+    "cost_inr": 90,
+    "rating": 4.8,
+    "reviews_count": 87,
+    "diet_tags": [
+      "Vegetarian",
+      "Quick",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "strawberries",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "name": "milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "heavy cream",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Hull and rinse fresh strawberries.",
+      "Blend with chilled milk and cream until thick and smooth.",
+      "Pour into a glass and serve immediately."
+    ]
+  },
+  {
+    "id": "rec_032",
+    "title": "Paneer Bhurji Wrap",
+    "description": "Spiced scrambled cottage cheese rolled inside warm flatbread with crunchy onion relish.",
+    "cuisine": "Indian",
+    "category": "Lunch",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "difficulty": "Easy",
+    "calories": 420,
+    "cost_inr": 150,
+    "rating": 4.8,
+    "reviews_count": 112,
+    "diet_tags": [
+      "Vegetarian",
+      "High-Protein",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "paneer",
+        "amount": 180,
+        "unit": "g"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "bread",
+        "amount": 2,
+        "unit": "slices"
+      },
+      {
+        "name": "butter",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Crumble fresh paneer with fingers.",
+      "Sauté onions, tomatoes, and green chilies in butter.",
+      "Add crumbled paneer, turmeric, and garam masala; toss for 3 minutes.",
+      "Fill into bread or roti, roll tightly, and enjoy warm."
+    ]
+  },
+  {
+    "id": "rec_033",
+    "title": "Crispy Herb Potato Wedges",
+    "description": "Seasoned golden potato wedges baked crisp on the outside and fluffy on the inside.",
+    "cuisine": "Continental",
+    "category": "Snack",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 25,
+    "difficulty": "Easy",
+    "calories": 240,
+    "cost_inr": 60,
+    "rating": 4.7,
+    "reviews_count": 76,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "Eggless"
+    ],
+    "allergens": [],
+    "image_url": "https://images.unsplash.com/photo-1518013034458-30b0ee243591?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "potatoes",
+        "amount": 3,
+        "unit": "items"
+      },
+      {
+        "name": "olive oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "name": "garlic",
+        "amount": 2,
+        "unit": "cloves"
+      }
+    ],
+    "steps": [
+      "Cut potatoes into wedges.",
+      "Toss with olive oil, minced garlic, paprika, and sea salt.",
+      "Spread on baking tray and bake at 200°C for 25 minutes until crunchy and golden."
+    ]
+  },
+  {
+    "id": "rec_034",
+    "title": "Vegetable Hakka Noodles",
+    "description": "Street-style stir fried noodles with shredded cabbage, bell peppers, carrots, and spring onions.",
+    "cuisine": "Asian",
+    "category": "Dinner",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "difficulty": "Easy",
+    "calories": 390,
+    "cost_inr": 130,
+    "rating": 4.8,
+    "reviews_count": 145,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "Quick",
+      "Eggless"
+    ],
+    "allergens": [
+      "Gluten",
+      "Soy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "pasta",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "cabbage",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "carrots",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "bell pepper",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "soy sauce",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Boil noodles or pasta until just tender, drain and toss with a drop of oil.",
+      "In high-heat wok, stir fry julienned vegetables for 2 minutes.",
+      "Add noodles, soy sauce, and black pepper; toss vigorously for 1-2 minutes."
+    ]
+  },
+  {
+    "id": "rec_035",
+    "title": "Vegetable Cheese Omelette",
+    "description": "Fluffy beaten eggs packed with sautéed bell peppers, tomatoes, and melted gooey cheese.",
+    "cuisine": "Continental",
+    "category": "Breakfast",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 7,
+    "difficulty": "Easy",
+    "calories": 340,
+    "cost_inr": 90,
+    "rating": 4.8,
+    "reviews_count": 98,
+    "diet_tags": [
+      "Non-Veg",
+      "High-Protein",
+      "Quick"
+    ],
+    "allergens": [
+      "Eggs",
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "eggs",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "bell pepper",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "cheese",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "name": "butter",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Beat eggs with salt and pepper.",
+      "Sauté finely diced peppers and tomatoes in butter for 1 minute.",
+      "Pour in beaten eggs and let set on low heat.",
+      "Sprinkle cheese on one half, fold over, and slide onto plate."
+    ]
+  },
+  {
+    "id": "rec_036",
+    "title": "Lemon Honey Iced Tea",
+    "description": "Brewed black tea infused with freshly squeezed lemon juice, honey, and crushed mint.",
+    "cuisine": "Continental",
+    "category": "Drinks",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 3,
+    "difficulty": "Easy",
+    "calories": 90,
+    "cost_inr": 40,
+    "rating": 4.6,
+    "reviews_count": 42,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "Quick",
+      "Eggless"
+    ],
+    "allergens": [],
+    "image_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "lemon",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "iced tea",
+        "amount": 250,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Pour chilled iced tea into a tall glass over ice cubes.",
+      "Squeeze fresh lemon juice.",
+      "Garnish with a lemon wheel and mint leaf."
+    ]
+  },
+  {
+    "id": "rec_037",
+    "title": "Broccoli Cheddar Soup",
+    "description": "Velvety soup loaded with tender broccoli florets and sharp cheddar cheese.",
+    "cuisine": "American",
+    "category": "Dinner",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "difficulty": "Medium",
+    "calories": 390,
+    "cost_inr": 180,
+    "rating": 4.7,
+    "reviews_count": 67,
+    "diet_tags": [
+      "Vegetarian",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "broccoli",
+        "amount": 1,
+        "unit": "heads"
+      },
+      {
+        "name": "carrots",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "cheese",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "name": "milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "butter",
+        "amount": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sauté grated carrots and garlic in butter.",
+      "Add milk and vegetable broth, bring to a gentle simmer.",
+      "Add chopped broccoli florets and cook until tender.",
+      "Remove from heat and melt in shredded cheese until smooth and creamy."
+    ]
+  },
+  {
+    "id": "rec_038",
+    "title": "Avocado Tomato Salad with Lime",
+    "description": "Creamy avocado chunks combined with sweet tomatoes, red onion, and fresh cilantro lime dressing.",
+    "cuisine": "Mexican",
+    "category": "Lunch",
+    "prep_time_minutes": 8,
+    "cook_time_minutes": 0,
+    "difficulty": "Easy",
+    "calories": 210,
+    "cost_inr": 140,
+    "rating": 4.8,
+    "reviews_count": 83,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "Low-Carb",
+      "Quick",
+      "Eggless"
+    ],
+    "allergens": [],
+    "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "avocado",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 2,
+        "unit": "items"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "lemon",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "coriander",
+        "amount": 1,
+        "unit": "bunches"
+      }
+    ],
+    "steps": [
+      "Dice avocado and tomatoes.",
+      "Toss gently with finely diced onion, fresh coriander, lime juice, and salt.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "id": "rec_039",
+    "title": "Simple Orange Sparkler",
+    "description": "Freshly pressed sweet orange juice mixed with chilled sparkling water and crushed mint.",
+    "cuisine": "Continental",
+    "category": "Drinks",
+    "prep_time_minutes": 3,
+    "cook_time_minutes": 0,
+    "difficulty": "Easy",
+    "calories": 110,
+    "cost_inr": 60,
+    "rating": 4.7,
+    "reviews_count": 45,
+    "diet_tags": [
+      "Vegetarian",
+      "Vegan",
+      "Quick",
+      "Eggless"
+    ],
+    "allergens": [],
+    "image_url": "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "orange juice",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "lemon",
+        "amount": 1,
+        "unit": "items"
+      }
+    ],
+    "steps": [
+      "Fill glass with ice.",
+      "Pour fresh orange juice and a squeeze of lemon.",
+      "Stir gently and enjoy."
+    ]
+  },
+  {
+    "id": "rec_040",
+    "title": "Creamy Garlic Butter Salmon",
+    "description": "Pan-seared tender salmon fillets nestled in a rich garlic butter cream sauce with fresh spinach.",
+    "cuisine": "Continental",
+    "category": "Dinner",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "difficulty": "Medium",
+    "calories": 490,
+    "cost_inr": 350,
+    "rating": 4.9,
+    "reviews_count": 118,
+    "diet_tags": [
+      "Non-Veg",
+      "High-Protein",
+      "Low-Carb"
+    ],
+    "allergens": [
+      "Fish",
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "salmon",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "spinach",
+        "amount": 1,
+        "unit": "bunches"
+      },
+      {
+        "name": "heavy cream",
+        "amount": 80,
+        "unit": "ml"
+      },
+      {
+        "name": "garlic",
+        "amount": 4,
+        "unit": "cloves"
+      },
+      {
+        "name": "butter",
+        "amount": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Season salmon with salt and pepper, sear in butter for 4 minutes each side until golden.",
+      "Remove salmon, sauté garlic in the pan, add spinach until wilted.",
+      "Pour in heavy cream and simmer for 2 minutes.",
+      "Return salmon to skillet and baste with sauce."
+    ]
+  },
+  {
+    "id": "rec_041",
+    "title": "South Indian Fish Curry (Meen Kulambu)",
+    "description": "Tangy and spicy traditional fish curry simmered in tamarind tomato gravy with garlic.",
+    "cuisine": "Indian",
+    "category": "Dinner",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "difficulty": "Medium",
+    "calories": 380,
+    "cost_inr": 280,
+    "rating": 4.9,
+    "reviews_count": 134,
+    "diet_tags": [
+      "Non-Veg",
+      "High-Protein"
+    ],
+    "allergens": [
+      "Fish"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "fish",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 3,
+        "unit": "items"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "garlic",
+        "amount": 6,
+        "unit": "cloves"
+      },
+      {
+        "name": "green chilies",
+        "amount": 2,
+        "unit": "items"
+      }
+    ],
+    "steps": [
+      "Sauté onions, whole garlic cloves, and tomatoes with curry powders in oil.",
+      "Add tamarind water and simmer until the gravy turns rich and fragrant.",
+      "Gently slide fresh fish pieces into the boiling curry.",
+      "Simmer on low for 6-7 minutes until fish is tender."
+    ]
+  },
+  {
+    "id": "rec_042",
+    "title": "Vegetable Korma",
+    "description": "Medley of garden vegetables cooked in a fragrant, mildly spiced coconut and cashew cream sauce.",
+    "cuisine": "Indian",
+    "category": "Dinner",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "difficulty": "Medium",
+    "calories": 370,
+    "cost_inr": 150,
+    "rating": 4.8,
+    "reviews_count": 92,
+    "diet_tags": [
+      "Vegetarian",
+      "Eggless"
+    ],
+    "allergens": [
+      "Dairy"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "ingredients": [
+      {
+        "name": "potatoes",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "carrots",
+        "amount": 1,
+        "unit": "items"
+      },
+      {
+        "name": "peas",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "cauliflower",
+        "amount": 1,
+        "unit": "heads"
+      },
+      {
+        "name": "heavy cream",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "name": "onions",
+        "amount": 1,
+        "unit": "items"
+      }
+    ],
+    "steps": [
+      "Boil mixed vegetables until tender-crisp.",
+      "Sauté onion paste with whole spices until aromatic.",
+      "Stir in pureed cashew cream and vegetables; simmer for 5-7 minutes."
+    ]
+  }
+]

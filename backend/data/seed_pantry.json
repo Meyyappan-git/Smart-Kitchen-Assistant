@@ -1,0 +1,298 @@
+[
+  {
+    "name": "mushrooms",
+    "category": "Vegetables",
+    "quantity": 250,
+    "unit": "g",
+    "expiry_date": "2026-10-25",
+    "emoji": "🍄"
+  },
+  {
+    "name": "milk",
+    "category": "Dairy",
+    "quantity": 1000,
+    "unit": "ml",
+    "expiry_date": "2026-10-25",
+    "emoji": "🥛"
+  },
+  {
+    "name": "spinach",
+    "category": "Vegetables",
+    "quantity": 2,
+    "unit": "bunches",
+    "expiry_date": "2026-10-26",
+    "emoji": "🥬"
+  },
+  {
+    "name": "tomatoes",
+    "category": "Vegetables",
+    "quantity": 6,
+    "unit": "items",
+    "expiry_date": "2026-10-26",
+    "emoji": "🍅"
+  },
+  {
+    "name": "heavy cream",
+    "category": "Dairy",
+    "quantity": 200,
+    "unit": "ml",
+    "expiry_date": "2026-10-26",
+    "emoji": "🥛"
+  },
+  {
+    "name": "paneer",
+    "category": "Dairy",
+    "quantity": 400,
+    "unit": "g",
+    "expiry_date": "2026-10-27",
+    "emoji": "🧀"
+  },
+  {
+    "name": "strawberries",
+    "category": "Fruits",
+    "quantity": 250,
+    "unit": "g",
+    "expiry_date": "2026-10-27",
+    "emoji": "🍓"
+  },
+  {
+    "name": "bananas",
+    "category": "Fruits",
+    "quantity": 5,
+    "unit": "items",
+    "expiry_date": "2026-10-28",
+    "emoji": "🍌"
+  },
+  {
+    "name": "curd",
+    "category": "Dairy",
+    "quantity": 500,
+    "unit": "g",
+    "expiry_date": "2026-10-28",
+    "emoji": "🥣"
+  },
+  {
+    "name": "bread",
+    "category": "Pantry",
+    "quantity": 8,
+    "unit": "slices",
+    "expiry_date": "2026-10-27",
+    "emoji": "🍞"
+  },
+  {
+    "name": "eggs",
+    "category": "Protein",
+    "quantity": 12,
+    "unit": "items",
+    "expiry_date": "2026-11-07",
+    "emoji": "🥚"
+  },
+  {
+    "name": "cheese",
+    "category": "Dairy",
+    "quantity": 200,
+    "unit": "g",
+    "expiry_date": "2026-11-05",
+    "emoji": "🧀"
+  },
+  {
+    "name": "butter",
+    "category": "Dairy",
+    "quantity": 250,
+    "unit": "g",
+    "expiry_date": "2026-11-18",
+    "emoji": "🧈"
+  },
+  {
+    "name": "pasta",
+    "category": "Pantry",
+    "quantity": 500,
+    "unit": "g",
+    "expiry_date": "2027-02-21",
+    "emoji": "🍝"
+  },
+  {
+    "name": "basmati rice",
+    "category": "Pantry",
+    "quantity": 1000,
+    "unit": "g",
+    "expiry_date": "2027-04-22",
+    "emoji": "🍚"
+  },
+  {
+    "name": "garlic",
+    "category": "Vegetables",
+    "quantity": 15,
+    "unit": "cloves",
+    "expiry_date": "2026-11-23",
+    "emoji": "🧄"
+  },
+  {
+    "name": "onions",
+    "category": "Vegetables",
+    "quantity": 8,
+    "unit": "items",
+    "expiry_date": "2026-11-13",
+    "emoji": "🧅"
+  },
+  {
+    "name": "potatoes",
+    "category": "Vegetables",
+    "quantity": 6,
+    "unit": "items",
+    "expiry_date": "2026-11-18",
+    "emoji": "🥔"
+  },
+  {
+    "name": "bell pepper",
+    "category": "Vegetables",
+    "quantity": 3,
+    "unit": "items",
+    "expiry_date": "2026-11-01",
+    "emoji": "🫑"
+  },
+  {
+    "name": "carrots",
+    "category": "Vegetables",
+    "quantity": 4,
+    "unit": "items",
+    "expiry_date": "2026-11-05",
+    "emoji": "🥕"
+  },
+  {
+    "name": "broccoli",
+    "category": "Vegetables",
+    "quantity": 2,
+    "unit": "heads",
+    "expiry_date": "2026-10-30",
+    "emoji": "🥦"
+  },
+  {
+    "name": "cauliflower",
+    "category": "Vegetables",
+    "quantity": 1,
+    "unit": "heads",
+    "expiry_date": "2026-10-30",
+    "emoji": "🥦"
+  },
+  {
+    "name": "cucumber",
+    "category": "Vegetables",
+    "quantity": 3,
+    "unit": "items",
+    "expiry_date": "2026-10-29",
+    "emoji": "🥒"
+  },
+  {
+    "name": "green chilies",
+    "category": "Vegetables",
+    "quantity": 6,
+    "unit": "items",
+    "expiry_date": "2026-11-03",
+    "emoji": "🌶️"
+  },
+  {
+    "name": "ginger",
+    "category": "Vegetables",
+    "quantity": 50,
+    "unit": "g",
+    "expiry_date": "2026-11-11",
+    "emoji": "🫚"
+  },
+  {
+    "name": "coriander",
+    "category": "Vegetables",
+    "quantity": 2,
+    "unit": "bunches",
+    "expiry_date": "2026-10-28",
+    "emoji": "🌿"
+  },
+  {
+    "name": "apples",
+    "category": "Fruits",
+    "quantity": 5,
+    "unit": "items",
+    "expiry_date": "2026-11-07",
+    "emoji": "🍎"
+  },
+  {
+    "name": "oranges",
+    "category": "Fruits",
+    "quantity": 4,
+    "unit": "items",
+    "expiry_date": "2026-11-03",
+    "emoji": "🍊"
+  },
+  {
+    "name": "lemon",
+    "category": "Fruits",
+    "quantity": 4,
+    "unit": "items",
+    "expiry_date": "2026-11-08",
+    "emoji": "🍋"
+  },
+  {
+    "name": "orange juice",
+    "category": "Drinks",
+    "quantity": 750,
+    "unit": "ml",
+    "expiry_date": "2026-10-30",
+    "emoji": "🧃"
+  },
+  {
+    "name": "coconut water",
+    "category": "Drinks",
+    "quantity": 500,
+    "unit": "ml",
+    "expiry_date": "2026-10-29",
+    "emoji": "🥥"
+  },
+  {
+    "name": "iced tea",
+    "category": "Drinks",
+    "quantity": 500,
+    "unit": "ml",
+    "expiry_date": "2026-10-31",
+    "emoji": "🧋"
+  },
+  {
+    "name": "chicken breast",
+    "category": "Protein",
+    "quantity": 400,
+    "unit": "g",
+    "expiry_date": "2026-10-26",
+    "emoji": "🍗"
+  },
+  {
+    "name": "tofu",
+    "category": "Protein",
+    "quantity": 250,
+    "unit": "g",
+    "expiry_date": "2026-10-30",
+    "emoji": "🧊"
+  },
+  {
+    "name": "lentils",
+    "category": "Protein",
+    "quantity": 500,
+    "unit": "g",
+    "expiry_date": "2027-04-22",
+    "emoji": "🥣"
+  },
+  {
+    "name": "olive oil",
+    "category": "Pantry",
+    "quantity": 500,
+    "unit": "ml",
+    "expiry_date": "2027-04-22",
+    "emoji": "🫒"
+  },
+  {
+    "name": "soy sauce",
+    "category": "Pantry",
+    "quantity": 250,
+    "unit": "ml",
+    "expiry_date": "2027-04-22",
+    "emoji": "🍶"
+  }
+]
