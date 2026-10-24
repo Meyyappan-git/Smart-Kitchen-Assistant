@@ -1,2 +1,2 @@
 # Smart-Kitchen-Assistant
-Semmaya Samaikirom , Nalla Rusikirom
+Semmaya Samaikirom , Bayagarama Rusikirom
