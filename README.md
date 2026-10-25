@@ -1,4 +1,4 @@
-# AI Smart Fridge 🍳🤖
+# AI Smart Fridge 🤖
 > **An Intelligent Kitchen Assistant & Food Waste Reduction Platform**  
 > *Semmaya Samaikirom, Bayagarama Rusikirom*
 
