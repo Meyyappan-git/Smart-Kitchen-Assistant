@@ -1,4 +1,4 @@
-# AI Smart Fridge 🤖
+# PANTRY PILOT 🤖
 > **An Intelligent Kitchen Assistant & Food Waste Reduction Platform**  
 > *Semmaya Samaikirom, Bayagarama Rusikirom*
 
