@@ -101,7 +101,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F6F2EC] flex flex-col text-slate-800 selection:bg-orange-500 selection:text-white">
+    <div className="min-h-screen bg-[#FAFAF9] flex flex-col text-stone-900 selection:bg-stone-900 selection:text-white">
       
       {/* Desktop & Tablet Top Navigation Bar */}
       <NavbarDesktop

@@ -76,9 +76,9 @@ export default function SearchBar({
 
   return (
     <div className="relative w-full">
-      <div className="relative flex items-center bg-white rounded-2xl border border-stone-200/80 shadow-sm px-3.5 py-2.5 transition-all focus-within:border-[#FF6A00] focus-within:ring-2 focus-within:ring-[#FF6A00]/15">
+      <div className="relative flex items-center bg-white rounded-xl border border-stone-200/70 shadow-2xs px-3.5 py-2.5 transition-all focus-within:border-stone-400 focus-within:ring-2 focus-within:ring-stone-200/60">
         {/* Left search icon */}
-        <Search className="w-5 h-5 text-stone-400 shrink-0 mr-2.5" />
+        <Search className="w-4 h-4 text-stone-400 shrink-0 mr-2.5" />
 
         {/* Input */}
         <input
@@ -87,7 +87,7 @@ export default function SearchBar({
           onChange={(e) => onChange && onChange(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && onSearch && onSearch(value)}
           placeholder={isListening ? "Listening... Speak ingredient name" : placeholder}
-          className="w-full bg-transparent text-sm text-slate-800 placeholder:text-stone-400 focus:outline-none"
+          className="w-full bg-transparent text-xs sm:text-sm text-stone-800 placeholder:text-stone-400 focus:outline-none"
         />
 
         {/* Clear text button */}
@@ -100,25 +100,25 @@ export default function SearchBar({
             }}
             className="p-1 text-stone-400 hover:text-stone-600 rounded-full mr-1 cursor-pointer"
           >
-            <X className="w-4 h-4" />
+            <X className="w-3.5 h-3.5" />
           </button>
         )}
 
         {/* Action icons on right: Mic & Camera */}
-        <div className="flex items-center gap-1 shrink-0 ml-1 pl-2 border-l border-stone-200">
+        <div className="flex items-center gap-1 shrink-0 ml-1 pl-2 border-l border-stone-200/60">
           {/* Microphone button (Web Speech API) */}
           <button
             type="button"
             onClick={toggleVoiceInput}
             title={isListening ? "Stop listening" : "Search by voice"}
-            className={`p-2 rounded-xl transition-all cursor-pointer ${
+            className={`p-1.5 rounded-lg transition-all cursor-pointer ${
               isListening 
-                ? 'bg-orange-500 text-white voice-listening shadow-md shadow-orange-500/30' 
-                : 'text-stone-500 hover:text-[#FF6A00] hover:bg-orange-50'
+                ? 'bg-orange-500 text-white voice-listening' 
+                : 'text-stone-400 hover:text-stone-700 hover:bg-stone-100'
             }`}
             aria-label="Voice input"
           >
-            {isListening ? <Mic className="w-4 h-4 animate-bounce" /> : <Mic className="w-4 h-4" />}
+            <Mic className="w-4 h-4" />
           </button>
 
           {/* Camera button (Opens fridge photo upload) */}
@@ -126,7 +126,7 @@ export default function SearchBar({
             type="button"
             onClick={onOpenPhotoScan}
             title="Scan fridge photo with Gemini AI"
-            className="p-2 text-stone-500 hover:text-[#FF6A00] hover:bg-orange-50 rounded-xl transition-colors cursor-pointer"
+            className="p-1.5 text-stone-400 hover:text-stone-700 hover:bg-stone-100 rounded-lg transition-colors cursor-pointer"
             aria-label="Upload fridge photo"
           >
             <Camera className="w-4 h-4" />
@@ -136,12 +136,12 @@ export default function SearchBar({
       
       {/* Listening indicator toast */}
       {isListening && (
-        <div className="absolute top-full left-0 right-0 mt-1.5 px-3 py-1.5 bg-orange-600 text-white text-xs rounded-xl shadow-lg flex items-center justify-between z-10 animate-fadeIn">
+        <div className="absolute top-full left-0 right-0 mt-1.5 px-3 py-1.5 bg-stone-900 text-white text-xs rounded-xl shadow-lg flex items-center justify-between z-10 animate-fadeIn">
           <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-white animate-ping" />
+            <span className="w-2 h-2 rounded-full bg-orange-400 animate-ping" />
             Listening to your microphone...
           </span>
-          <button onClick={toggleVoiceInput} className="text-white/80 hover:text-white font-bold text-xs">
+          <button onClick={toggleVoiceInput} className="text-stone-300 hover:text-white font-medium text-xs">
             Cancel
           </button>
         </div>

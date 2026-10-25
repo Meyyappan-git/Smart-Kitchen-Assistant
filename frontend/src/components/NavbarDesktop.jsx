@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, UtensilsCrossed, ShoppingCart, CalendarDays, Settings, Sun, Bell, Plus, Sparkles } from 'lucide-react';
+import { Home, UtensilsCrossed, ShoppingCart, CalendarDays, Settings, Sun, Bell, Plus } from 'lucide-react';
 import MascotChef from './MascotChef';
 
 export default function NavbarDesktop({
@@ -19,35 +19,34 @@ export default function NavbarDesktop({
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md border-b border-stone-200/80 shadow-xs">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between gap-4">
+    <header className="sticky top-0 z-40 w-full bg-white/85 backdrop-blur-md border-b border-stone-200/60 transition-colors">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
         
         {/* Left: Brand & Mascot */}
         <div 
           onClick={() => onSelectTab('home')}
-          className="flex items-center gap-3 cursor-pointer group"
+          className="flex items-center gap-2.5 cursor-pointer group select-none"
         >
-          <div className="group-hover:scale-105 transition-transform">
-            <MascotChef variant="avatar" size={42} />
+          <div className="w-9 h-9 rounded-xl bg-stone-100 flex items-center justify-center p-0.5 group-hover:bg-orange-50 transition-colors">
+            <MascotChef variant="avatar" size={30} />
           </div>
           <div>
             <div className="flex items-center gap-1.5">
-              <span className="text-base font-extrabold text-slate-900 tracking-tight">
-                AI Smart Fridge
+              <span className="text-sm font-bold text-stone-900 tracking-tight">
+                Smart Kitchen
               </span>
-              <span className="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-orange-100 text-[#FF6A00] text-[10px] font-bold">
-                <Sparkles className="w-2.5 h-2.5" />
-                Assistant
+              <span className="inline-flex items-center px-1.5 py-0.2 rounded-full bg-stone-100 text-stone-500 text-[10px] font-medium border border-stone-200/50">
+                AI Assistant
               </span>
             </div>
-            <p className="text-[11px] text-stone-500 font-medium">
+            <p className="text-[11px] text-stone-400 font-normal leading-none hidden sm:block mt-0.5">
               Zero-Waste Kitchen Management
             </p>
           </div>
         </div>
 
-        {/* Center: Desktop Navigation Tabs */}
-        <nav className="flex items-center gap-1 bg-stone-100/80 p-1.5 rounded-2xl border border-stone-200/60 shadow-inner">
+        {/* Center: Desktop Navigation Tabs (Hidden on mobile) */}
+        <nav className="hidden md:flex items-center gap-1 bg-stone-100/70 p-1 rounded-xl border border-stone-200/40">
           {tabs.map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
@@ -57,18 +56,18 @@ export default function NavbarDesktop({
                 id={`desktop-nav-${tab.id}`}
                 key={tab.id}
                 onClick={() => onSelectTab(tab.id)}
-                className={`relative px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition-all cursor-pointer ${
+                className={`relative px-3.5 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all cursor-pointer ${
                   isActive 
-                    ? 'bg-gradient-to-r from-[#FF8A1F] to-[#FF6A00] text-white shadow-sm' 
-                    : 'text-stone-600 hover:text-slate-900 hover:bg-stone-200/60'
+                    ? 'bg-white text-stone-900 shadow-xs font-semibold' 
+                    : 'text-stone-500 hover:text-stone-800 hover:bg-white/50'
                 }`}
               >
-                <Icon className={`w-4 h-4 ${isActive ? 'stroke-[2.5]' : 'stroke-[2]'}`} />
+                <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-orange-600 stroke-[2.2]' : 'text-stone-400 stroke-[1.8]'}`} />
                 <span>{tab.label}</span>
 
                 {tab.badge > 0 && (
-                  <span className={`min-w-[16px] h-4 px-1 rounded-full text-[10px] font-extrabold flex items-center justify-center ${
-                    isActive ? 'bg-white text-[#FF6A00]' : 'bg-[#FF6A00] text-white'
+                  <span className={`min-w-[16px] h-4 px-1 rounded-full text-[10px] font-bold flex items-center justify-center ml-0.5 ${
+                    isActive ? 'bg-orange-500 text-white' : 'bg-stone-300 text-stone-700'
                   }`}>
                     {tab.badge}
                   </span>
@@ -78,35 +77,35 @@ export default function NavbarDesktop({
           })}
         </nav>
 
-        {/* Right: Weather, Notifications & Add Button */}
-        <div className="flex items-center gap-3">
-          {/* Weather Chip */}
-          <div className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 bg-amber-50 border border-amber-200/80 rounded-xl text-xs font-bold text-amber-900">
-            <Sun className="w-4 h-4 text-amber-500" />
+        {/* Right: Ambient Weather, Alerts & Quick Add */}
+        <div className="flex items-center gap-2 sm:gap-2.5">
+          {/* Weather pill */}
+          <div className="hidden lg:flex items-center gap-1 px-2.5 py-1 bg-stone-100/60 rounded-lg text-xs font-medium text-stone-600 border border-stone-200/40">
+            <Sun className="w-3.5 h-3.5 text-amber-500" />
             <span>{weather?.temp || '24°C'}</span>
           </div>
 
-          {/* Expiry alerts button */}
+          {/* Expiry alerts bell */}
           <button
             onClick={() => onSelectTab('pantry')}
-            className="relative w-9 h-9 rounded-xl bg-stone-100 hover:bg-orange-50 border border-stone-200/80 flex items-center justify-center text-stone-600 hover:text-[#FF6A00] transition-colors cursor-pointer"
+            className="relative w-8 h-8 rounded-lg bg-stone-100/70 hover:bg-stone-100 border border-stone-200/50 flex items-center justify-center text-stone-500 hover:text-stone-800 transition-colors cursor-pointer"
             title="Expiry Alerts"
           >
-            <Bell className="w-4 h-4" />
+            <Bell className="w-3.5 h-3.5" />
             {urgentAlertsCount > 0 && (
-              <span className="absolute -top-1 -right-1 min-w-[16px] h-4 px-1 bg-rose-500 text-white text-[10px] font-extrabold rounded-full flex items-center justify-center animate-pulse">
+              <span className="absolute -top-1 -right-1 min-w-[15px] h-[15px] px-1 bg-orange-500 text-white text-[9px] font-bold rounded-full flex items-center justify-center">
                 {urgentAlertsCount}
               </span>
             )}
           </button>
 
-          {/* Quick Add Button */}
+          {/* Minimal Add Button */}
           <button
             onClick={onOpenAddIngredient}
-            className="px-3.5 py-2 bg-gradient-to-r from-[#FF8A1F] to-[#FF6A00] hover:from-[#FF7A10] hover:to-[#EA580C] text-white rounded-xl text-xs font-extrabold shadow-sm flex items-center gap-1.5 active:scale-95 transition-all cursor-pointer"
+            className="h-8 px-3 bg-stone-900 hover:bg-stone-800 text-white rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all shadow-xs cursor-pointer active:scale-95"
           >
-            <Plus className="w-4 h-4" />
-            <span className="hidden sm:inline">Add Ingredients</span>
+            <Plus className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">Add Item</span>
           </button>
         </div>
 
@@ -114,3 +113,4 @@ export default function NavbarDesktop({
     </header>
   );
 }
+

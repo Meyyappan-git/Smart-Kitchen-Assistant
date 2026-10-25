@@ -111,55 +111,55 @@ export default function AddIngredientsModal({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/60 backdrop-blur-sm animate-fadeIn">
-      <div className="relative w-full max-w-lg bg-white rounded-3xl overflow-hidden shadow-2xl max-h-[90vh] flex flex-col">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/40 backdrop-blur-xs animate-fadeIn">
+      <div className="relative w-full max-w-lg bg-white rounded-2xl overflow-hidden shadow-xl max-h-[90vh] flex flex-col border border-stone-200/80">
         {/* Header */}
-        <div className="p-4 border-b border-stone-100 flex items-center justify-between bg-stone-50">
+        <div className="p-4 border-b border-stone-100 flex items-center justify-between bg-stone-50/60">
           <div>
-            <h2 className="text-base font-extrabold text-slate-900 tracking-tight">
-              Add Ingredients to Fridge
+            <h2 className="text-sm sm:text-base font-bold text-stone-900 tracking-tight">
+              Add Ingredients
             </h2>
-            <p className="text-[11px] text-stone-500 font-medium">
-              Photo scan with Gemini AI, type quick list, or manual entry
+            <p className="text-[11px] text-stone-400 font-normal">
+              Photo scan with Gemini AI, quick comma list, or manual entry
             </p>
           </div>
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-white hover:bg-stone-200 text-stone-500 flex items-center justify-center shadow-xs cursor-pointer transition-colors"
+            className="w-7 h-7 rounded-lg bg-white hover:bg-stone-100 text-stone-400 hover:text-stone-700 flex items-center justify-center border border-stone-200/60 cursor-pointer transition-colors"
           >
             <X className="w-4 h-4" />
           </button>
         </div>
 
         {/* Tab Switcher */}
-        <div className="flex border-b border-stone-100 bg-stone-50/50 p-1.5">
+        <div className="flex border-b border-stone-100 bg-stone-50/40 p-1.5 gap-1">
           <button
             onClick={() => setActiveTab('photo')}
-            className={`flex-1 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
+            className={`flex-1 py-1.5 rounded-lg text-xs font-medium flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
               activeTab === 'photo' 
-                ? 'bg-white text-[#FF6A00] shadow-xs' 
+                ? 'bg-white text-stone-900 shadow-2xs font-semibold' 
                 : 'text-stone-500 hover:text-stone-800'
             }`}
           >
             <Camera className="w-3.5 h-3.5" />
-            <span>AI Photo Scan</span>
+            <span>AI Photo</span>
           </button>
           <button
             onClick={() => setActiveTab('bulk')}
-            className={`flex-1 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
+            className={`flex-1 py-1.5 rounded-lg text-xs font-medium flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
               activeTab === 'bulk' 
-                ? 'bg-white text-[#FF6A00] shadow-xs' 
+                ? 'bg-white text-stone-900 shadow-2xs font-semibold' 
                 : 'text-stone-500 hover:text-stone-800'
             }`}
           >
             <FileText className="w-3.5 h-3.5" />
-            <span>Quick Comma Text</span>
+            <span>Quick Text</span>
           </button>
           <button
             onClick={() => setActiveTab('manual')}
-            className={`flex-1 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
+            className={`flex-1 py-1.5 rounded-lg text-xs font-medium flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
               activeTab === 'manual' 
-                ? 'bg-white text-[#FF6A00] shadow-xs' 
+                ? 'bg-white text-stone-900 shadow-2xs font-semibold' 
                 : 'text-stone-500 hover:text-stone-800'
             }`}
           >
@@ -173,7 +173,7 @@ export default function AddIngredientsModal({
           <div className="flex-1 overflow-y-auto p-5 space-y-4">
             <div 
               onClick={() => fileInputRef.current?.click()}
-              className="border-2 border-dashed border-orange-200 hover:border-orange-400 bg-orange-50/30 hover:bg-orange-50/60 rounded-2xl p-5 flex flex-col items-center justify-center cursor-pointer transition-all"
+              className="border-2 border-dashed border-stone-200 hover:border-stone-400 bg-stone-50/50 hover:bg-stone-50 rounded-xl p-5 flex flex-col items-center justify-center cursor-pointer transition-all"
             >
               <input
                 ref={fileInputRef}
@@ -183,21 +183,21 @@ export default function AddIngredientsModal({
                 className="hidden"
               />
               {previewUrl ? (
-                <div className="relative w-full h-40 rounded-xl overflow-hidden mb-2">
+                <div className="relative w-full h-40 rounded-lg overflow-hidden mb-2">
                   <img src={previewUrl} alt="Fridge preview" className="w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center text-white text-xs font-bold">
+                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center text-white text-xs font-medium">
                     Click to choose different photo
                   </div>
                 </div>
               ) : (
                 <>
-                  <div className="w-12 h-12 rounded-2xl bg-orange-100 text-[#FF6A00] flex items-center justify-center mb-2">
-                    <Upload className="w-6 h-6" />
+                  <div className="w-10 h-10 rounded-xl bg-stone-100 text-stone-600 flex items-center justify-center mb-2">
+                    <Upload className="w-5 h-5" />
                   </div>
-                  <p className="text-xs font-bold text-slate-800">
+                  <p className="text-xs font-semibold text-stone-800">
                     Take photo or upload fridge shelf picture
                   </p>
-                  <p className="text-[11px] text-stone-500 mt-1">
+                  <p className="text-[11px] text-stone-400 mt-0.5">
                     Gemini AI Vision will automatically detect ingredients
                   </p>
                 </>
@@ -208,16 +208,16 @@ export default function AddIngredientsModal({
               <button
                 onClick={handleScanPhoto}
                 disabled={isScanning}
-                className="w-full py-3 bg-gradient-to-r from-[#FF8A1F] to-[#FF6A00] text-white font-extrabold text-xs rounded-xl shadow-md flex items-center justify-center gap-2 active:scale-95 transition-all cursor-pointer disabled:opacity-50"
+                className="w-full py-2.5 bg-stone-900 hover:bg-stone-800 text-white font-medium text-xs rounded-xl shadow-2xs flex items-center justify-center gap-2 active:scale-95 transition-all cursor-pointer disabled:opacity-50"
               >
-                <Sparkles className="w-4 h-4 text-amber-200" />
+                <Sparkles className="w-3.5 h-3.5 text-orange-400" />
                 <span>{isScanning ? 'Analyzing with Gemini AI...' : 'Analyze Photo with Gemini AI'}</span>
               </button>
             )}
 
             {scanMessage && (
-              <div className="p-3 bg-stone-50 border border-stone-200 rounded-xl text-xs text-slate-700 flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-[#FF6A00] shrink-0" />
+              <div className="p-3 bg-stone-50 border border-stone-200/70 rounded-xl text-xs text-stone-700 flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-orange-500 shrink-0" />
                 <span>{scanMessage}</span>
               </div>
             )}
@@ -226,19 +226,19 @@ export default function AddIngredientsModal({
             {detectedItems.length > 0 && (
               <div className="space-y-2 pt-2">
                 <div className="flex items-center justify-between">
-                  <h4 className="text-xs font-bold text-slate-800">
+                  <h4 className="text-xs font-semibold text-stone-800">
                     Detected Items ({detectedItems.length})
                   </h4>
-                  <span className="text-[10px] text-stone-500 font-medium">
+                  <span className="text-[10px] text-stone-400 font-normal">
                     Edit quantities or expiry before saving
                   </span>
                 </div>
 
                 <div className="space-y-2 max-h-56 overflow-y-auto pr-1">
                   {detectedItems.map((item, idx) => (
-                    <div key={idx} className="flex items-center justify-between p-2.5 bg-stone-50 rounded-xl border border-stone-200 gap-2">
+                    <div key={idx} className="flex items-center justify-between p-2.5 bg-stone-50/80 rounded-xl border border-stone-200/70 gap-2">
                       <div className="flex items-center gap-2 flex-1">
-                        <span className="text-lg">{item.emoji || '🥗'}</span>
+                        <span className="text-base">{item.emoji || '🥗'}</span>
                         <div className="flex-1">
                           <input
                             type="text"
@@ -248,9 +248,9 @@ export default function AddIngredientsModal({
                               updated[idx].name = e.target.value;
                               setDetectedItems(updated);
                             }}
-                            className="text-xs font-bold text-slate-800 bg-transparent border-b border-stone-200 focus:outline-none w-full capitalize"
+                            className="text-xs font-semibold text-stone-800 bg-transparent border-b border-stone-200 focus:outline-none w-full capitalize"
                           />
-                          <p className="text-[10px] text-stone-500">
+                          <p className="text-[10px] text-stone-400">
                             Expires in {item.suggested_shelf_life_days || 7} days ({item.category})
                           </p>
                         </div>
@@ -274,7 +274,7 @@ export default function AddIngredientsModal({
                           onClick={() => {
                             setDetectedItems(detectedItems.filter((_, i) => i !== idx));
                           }}
-                          className="p-1 text-rose-500 hover:text-rose-700"
+                          className="p-1 text-stone-300 hover:text-rose-600 transition-colors"
                         >
                           <Trash2 className="w-3.5 h-3.5" />
                         </button>
@@ -285,10 +285,10 @@ export default function AddIngredientsModal({
 
                 <button
                   onClick={handleSaveDetectedItems}
-                  className="w-full mt-3 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs rounded-xl shadow-md flex items-center justify-center gap-1.5 active:scale-95 transition-all cursor-pointer"
+                  className="w-full mt-3 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-medium text-xs rounded-xl shadow-2xs flex items-center justify-center gap-1.5 active:scale-95 transition-all cursor-pointer"
                 >
                   <Check className="w-4 h-4" />
-                  <span>Confirm & Add {detectedItems.length} Items to Fridge</span>
+                  <span>Confirm & Add {detectedItems.length} Items</span>
                 </button>
               </div>
             )}
@@ -299,7 +299,7 @@ export default function AddIngredientsModal({
         {activeTab === 'bulk' && (
           <div className="p-5 space-y-4">
             <div>
-              <label className="block text-xs font-bold text-slate-800 mb-1">
+              <label className="block text-xs font-semibold text-stone-800 mb-1">
                 Type ingredients (comma-separated):
               </label>
               <textarea
@@ -307,20 +307,20 @@ export default function AddIngredientsModal({
                 onChange={(e) => setBulkText(e.target.value)}
                 rows={4}
                 placeholder="e.g. 4 tomatoes, 1000ml milk, 6 eggs, 250g paneer, 2 avocados"
-                className="w-full p-3 text-xs border border-stone-200 rounded-2xl focus:border-[#FF6A00] focus:ring-1 focus:ring-[#FF6A00] focus:outline-none"
+                className="w-full p-3 text-xs border border-stone-200 rounded-xl focus:border-stone-400 focus:outline-none"
               />
-              <p className="text-[11px] text-stone-500 mt-1">
-                Tip: Quantities and units (like 500g, 2 bunches, 3 items) are automatically parsed, and expiry dates are auto-filled using standard shelf life!
+              <p className="text-[11px] text-stone-400 mt-1">
+                Tip: Quantities and units (500g, 2 bunches, 3 items) are automatically parsed.
               </p>
             </div>
 
             <button
               onClick={handleSaveBulkText}
               disabled={isSubmittingBulk || !bulkText.trim()}
-              className="w-full py-3 bg-gradient-to-r from-[#FF8A1F] to-[#FF6A00] text-white font-extrabold text-xs rounded-xl shadow-md flex items-center justify-center gap-1.5 active:scale-95 transition-all cursor-pointer disabled:opacity-50"
+              className="w-full py-2.5 bg-stone-900 hover:bg-stone-800 text-white font-medium text-xs rounded-xl shadow-2xs flex items-center justify-center gap-1.5 active:scale-95 transition-all cursor-pointer disabled:opacity-50"
             >
               <Plus className="w-4 h-4" />
-              <span>{isSubmittingBulk ? 'Adding to Fridge...' : 'Add Ingredients to Fridge'}</span>
+              <span>{isSubmittingBulk ? 'Adding...' : 'Add Ingredients to Fridge'}</span>
             </button>
           </div>
         )}
@@ -329,24 +329,24 @@ export default function AddIngredientsModal({
         {activeTab === 'manual' && (
           <form onSubmit={handleSaveManual} className="p-5 space-y-3.5">
             <div>
-              <label className="block text-xs font-bold text-slate-800 mb-1">Ingredient Name</label>
+              <label className="block text-xs font-semibold text-stone-800 mb-1">Ingredient Name</label>
               <input
                 type="text"
                 required
                 value={manualName}
                 onChange={(e) => setManualName(e.target.value)}
                 placeholder="e.g. Fresh Mushrooms"
-                className="w-full p-2.5 text-xs border border-stone-200 rounded-xl focus:border-[#FF6A00] focus:outline-none"
+                className="w-full p-2.5 text-xs border border-stone-200 rounded-xl focus:border-stone-400 focus:outline-none"
               />
             </div>
 
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-xs font-bold text-slate-800 mb-1">Category</label>
+                <label className="block text-xs font-semibold text-stone-800 mb-1">Category</label>
                 <select
                   value={manualCategory}
                   onChange={(e) => setManualCategory(e.target.value)}
-                  className="w-full p-2.5 text-xs border border-stone-200 rounded-xl focus:border-[#FF6A00] focus:outline-none bg-white"
+                  className="w-full p-2.5 text-xs border border-stone-200 rounded-xl focus:border-stone-400 focus:outline-none bg-white"
                 >
                   <option value="Vegetables">Vegetables</option>
                   <option value="Fruits">Fruits</option>
@@ -358,19 +358,19 @@ export default function AddIngredientsModal({
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-800 mb-1">Emoji Icon</label>
+                <label className="block text-xs font-semibold text-stone-800 mb-1">Emoji Icon</label>
                 <input
                   type="text"
                   value={manualEmoji}
                   onChange={(e) => setManualEmoji(e.target.value)}
-                  className="w-full p-2 text-center text-sm border border-stone-200 rounded-xl focus:border-[#FF6A00] focus:outline-none bg-white"
+                  className="w-full p-2 text-center text-sm border border-stone-200 rounded-xl focus:border-stone-400 focus:outline-none bg-white"
                 />
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-xs font-bold text-slate-800 mb-1">Quantity</label>
+                <label className="block text-xs font-semibold text-stone-800 mb-1">Quantity</label>
                 <input
                   type="number"
                   min="0.1"
@@ -378,16 +378,16 @@ export default function AddIngredientsModal({
                   required
                   value={manualQuantity}
                   onChange={(e) => setManualQuantity(e.target.value)}
-                  className="w-full p-2.5 text-xs border border-stone-200 rounded-xl focus:border-[#FF6A00] focus:outline-none"
+                  className="w-full p-2.5 text-xs border border-stone-200 rounded-xl focus:border-stone-400 focus:outline-none"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-800 mb-1">Unit</label>
+                <label className="block text-xs font-semibold text-stone-800 mb-1">Unit</label>
                 <select
                   value={manualUnit}
                   onChange={(e) => setManualUnit(e.target.value)}
-                  className="w-full p-2.5 text-xs border border-stone-200 rounded-xl focus:border-[#FF6A00] focus:outline-none bg-white"
+                  className="w-full p-2.5 text-xs border border-stone-200 rounded-xl focus:border-stone-400 focus:outline-none bg-white"
                 >
                   <option value="items">items</option>
                   <option value="g">g (grams)</option>
@@ -400,24 +400,24 @@ export default function AddIngredientsModal({
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-800 mb-1">
-                Expiry Date (Optional - defaults to shelf-life)
+              <label className="block text-xs font-semibold text-stone-800 mb-1">
+                Expiry Date (Optional)
               </label>
               <input
                 type="date"
                 value={manualExpiry}
                 onChange={(e) => setManualExpiry(e.target.value)}
-                className="w-full p-2.5 text-xs border border-stone-200 rounded-xl focus:border-[#FF6A00] focus:outline-none bg-white"
+                className="w-full p-2.5 text-xs border border-stone-200 rounded-xl focus:border-stone-400 focus:outline-none bg-white"
               />
             </div>
 
             <button
               type="submit"
               disabled={isSubmittingManual}
-              className="w-full mt-2 py-3 bg-gradient-to-r from-[#FF8A1F] to-[#FF6A00] text-white font-extrabold text-xs rounded-xl shadow-md flex items-center justify-center gap-1.5 active:scale-95 transition-all cursor-pointer disabled:opacity-50"
+              className="w-full mt-2 py-2.5 bg-stone-900 hover:bg-stone-800 text-white font-medium text-xs rounded-xl shadow-2xs flex items-center justify-center gap-1.5 active:scale-95 transition-all cursor-pointer disabled:opacity-50"
             >
               <Plus className="w-4 h-4" />
-              <span>{isSubmittingManual ? 'Saving...' : 'Save Item to Fridge'}</span>
+              <span>{isSubmittingManual ? 'Saving...' : 'Save to Fridge'}</span>
             </button>
           </form>
         )}
@@ -425,3 +425,4 @@ export default function AddIngredientsModal({
     </div>
   );
 }
+

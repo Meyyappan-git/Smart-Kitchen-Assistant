@@ -75,37 +75,37 @@ export default function SettingsScreen({ onSettingsUpdated }) {
   };
 
   return (
-    <div className="p-4 flex flex-col gap-4 pb-12">
+    <div className="flex flex-col gap-5 pb-12">
       {/* Header */}
       <div>
-        <h1 className="text-xl font-extrabold text-slate-900 tracking-tight">
+        <h1 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight">
           Assistant Preferences
         </h1>
-        <p className="text-xs text-stone-500 font-medium mt-0.5">
+        <p className="text-xs text-stone-500 font-normal mt-0.5">
           Customize recipe suggestions, budgets, and dietary restrictions
         </p>
       </div>
 
       <form onSubmit={handleSave} className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
         {/* Profile Card */}
-        <div className="bg-white rounded-3xl p-4 border border-stone-100 shadow-sm flex items-center gap-3.5 md:col-span-2">
-          <MascotChef variant="avatar" size={54} />
+        <div className="bg-white rounded-xl p-4 border border-stone-200/70 shadow-2xs flex items-center gap-3.5 md:col-span-2">
+          <MascotChef variant="avatar" size={44} />
           <div className="flex-1">
-            <label className="block text-[10px] font-bold uppercase tracking-wider text-stone-400">
+            <label className="block text-[10px] font-semibold uppercase tracking-wider text-stone-400">
               Kitchen Profile Name
             </label>
             <input
               type="text"
               value={userName}
               onChange={(e) => setUserName(e.target.value)}
-              className="text-sm font-extrabold text-slate-800 bg-transparent border-b border-stone-200 focus:border-[#FF6A00] focus:outline-none w-full py-0.5"
+              className="text-sm font-bold text-stone-900 bg-transparent border-b border-stone-200 focus:border-stone-900 focus:outline-none w-full py-0.5"
             />
           </div>
         </div>
 
         {/* Dietary Preferences */}
-        <div className="bg-white rounded-3xl p-4 border border-stone-100 shadow-sm space-y-2.5">
-          <label className="block text-xs font-bold text-slate-900 flex items-center gap-1.5">
+        <div className="bg-white rounded-xl p-4 border border-stone-200/70 shadow-2xs space-y-3">
+          <label className="block text-xs font-semibold text-stone-900 flex items-center gap-1.5">
             <Heart className="w-3.5 h-3.5 text-rose-500" />
             <span>Dietary Preference</span>
           </label>
@@ -115,10 +115,10 @@ export default function SettingsScreen({ onSettingsUpdated }) {
                 type="button"
                 key={opt}
                 onClick={() => setDiet(opt)}
-                className={`py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                className={`py-2 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                   diet === opt
-                    ? 'bg-[#FF6A00] text-white shadow-xs'
-                    : 'bg-stone-50 text-stone-600 border border-stone-200 hover:border-orange-200'
+                    ? 'bg-stone-900 text-white shadow-2xs'
+                    : 'bg-stone-50 text-stone-600 border border-stone-200/70 hover:border-stone-300'
                 }`}
               >
                 {opt}
@@ -128,13 +128,13 @@ export default function SettingsScreen({ onSettingsUpdated }) {
         </div>
 
         {/* Budget Per Meal Slider */}
-        <div className="bg-white rounded-3xl p-4 border border-stone-100 shadow-sm space-y-2.5">
+        <div className="bg-white rounded-xl p-4 border border-stone-200/70 shadow-2xs space-y-3">
           <div className="flex items-center justify-between">
-            <label className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
-              <DollarSign className="w-3.5 h-3.5 text-emerald-500" />
+            <label className="text-xs font-semibold text-stone-900 flex items-center gap-1.5">
+              <DollarSign className="w-3.5 h-3.5 text-emerald-600" />
               <span>Target Budget Per Meal</span>
             </label>
-            <span className="text-sm font-extrabold text-[#FF6A00]">
+            <span className="text-sm font-bold text-stone-900">
               ₹{budget}
             </span>
           </div>
@@ -145,9 +145,9 @@ export default function SettingsScreen({ onSettingsUpdated }) {
             step="10"
             value={budget}
             onChange={(e) => setBudget(parseInt(e.target.value))}
-            className="w-full accent-[#FF6A00] cursor-pointer"
+            className="w-full accent-stone-900 cursor-pointer"
           />
-          <div className="flex justify-between text-[10px] text-stone-400 font-medium">
+          <div className="flex justify-between text-[10px] text-stone-400 font-normal">
             <span>₹80 (Budget)</span>
             <span>₹300 (Average)</span>
             <span>₹600 (Gourmet)</span>
@@ -155,13 +155,13 @@ export default function SettingsScreen({ onSettingsUpdated }) {
         </div>
 
         {/* Max Cooking Time Slider */}
-        <div className="bg-white rounded-3xl p-4 border border-stone-100 shadow-sm space-y-2.5">
+        <div className="bg-white rounded-xl p-4 border border-stone-200/70 shadow-2xs space-y-3">
           <div className="flex items-center justify-between">
-            <label className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-blue-500" />
+            <label className="text-xs font-semibold text-stone-900 flex items-center gap-1.5">
+              <Clock className="w-3.5 h-3.5 text-stone-500" />
               <span>Max Cooking Time</span>
             </label>
-            <span className="text-sm font-extrabold text-slate-900">
+            <span className="text-sm font-bold text-stone-900">
               {maxTime} mins
             </span>
           </div>
@@ -172,9 +172,9 @@ export default function SettingsScreen({ onSettingsUpdated }) {
             step="5"
             value={maxTime}
             onChange={(e) => setMaxTime(parseInt(e.target.value))}
-            className="w-full accent-slate-800 cursor-pointer"
+            className="w-full accent-stone-900 cursor-pointer"
           />
-          <div className="flex justify-between text-[10px] text-stone-400 font-medium">
+          <div className="flex justify-between text-[10px] text-stone-400 font-normal">
             <span>15m (Quick)</span>
             <span>45m (Standard)</span>
             <span>90m (Slow cooked)</span>
@@ -182,8 +182,8 @@ export default function SettingsScreen({ onSettingsUpdated }) {
         </div>
 
         {/* Allergen Avoidance */}
-        <div className="bg-white rounded-3xl p-4 border border-stone-100 shadow-sm space-y-2.5">
-          <label className="block text-xs font-bold text-slate-900 flex items-center gap-1.5">
+        <div className="bg-white rounded-xl p-4 border border-stone-200/70 shadow-2xs space-y-3">
+          <label className="block text-xs font-semibold text-stone-900 flex items-center gap-1.5">
             <Shield className="w-3.5 h-3.5 text-amber-500" />
             <span>Allergen Avoidance</span>
           </label>
@@ -195,10 +195,10 @@ export default function SettingsScreen({ onSettingsUpdated }) {
                   type="button"
                   key={item}
                   onClick={() => toggleAllergen(item)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                  className={`px-2.5 py-1 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                     selected
-                      ? 'bg-rose-50 text-rose-700 border-2 border-rose-300'
-                      : 'bg-stone-50 text-stone-600 border border-stone-200 hover:border-stone-300'
+                      ? 'bg-rose-50 text-rose-700 border border-rose-200'
+                      : 'bg-stone-50 text-stone-600 border border-stone-200/70 hover:border-stone-300'
                   }`}
                 >
                   {selected ? `✕ ${item}` : item}
@@ -209,16 +209,16 @@ export default function SettingsScreen({ onSettingsUpdated }) {
         </div>
 
         {/* Expiry Notifications Toggle */}
-        <div className="bg-white rounded-3xl p-4 border border-stone-100 shadow-sm flex items-center justify-between">
+        <div className="bg-white rounded-xl p-4 border border-stone-200/70 shadow-2xs flex items-center justify-between md:col-span-2">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-orange-100 text-[#FF6A00] flex items-center justify-center">
+            <div className="w-8 h-8 rounded-lg bg-stone-100 text-stone-700 flex items-center justify-center">
               <Bell className="w-4 h-4" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-slate-900">
+              <h4 className="text-xs font-semibold text-stone-900">
                 Expiry Alerts
               </h4>
-              <p className="text-[10px] text-stone-500 font-medium">
+              <p className="text-[10px] text-stone-400 font-normal">
                 Notify when items have ≤ 2 days left
               </p>
             </div>
@@ -227,7 +227,7 @@ export default function SettingsScreen({ onSettingsUpdated }) {
             type="checkbox"
             checked={notifications}
             onChange={(e) => setNotifications(e.target.checked)}
-            className="w-4 h-4 accent-[#FF6A00] cursor-pointer"
+            className="w-4 h-4 accent-stone-900 cursor-pointer"
           />
         </div>
 
@@ -235,12 +235,12 @@ export default function SettingsScreen({ onSettingsUpdated }) {
         <button
           type="submit"
           disabled={saving}
-          className="w-full py-3.5 bg-gradient-to-r from-[#FF8A1F] to-[#FF6A00] hover:from-[#FF7A10] hover:to-[#EA580C] text-white font-extrabold text-xs rounded-2xl shadow-lg shadow-orange-500/25 flex items-center justify-center gap-2 active:scale-95 transition-all cursor-pointer"
+          className="w-full py-2.5 bg-stone-900 hover:bg-stone-800 text-white font-medium text-xs rounded-xl shadow-2xs flex items-center justify-center gap-2 active:scale-95 transition-all cursor-pointer md:col-span-2"
         >
           {savedSuccess ? (
             <>
-              <Check className="w-4 h-4 text-white" />
-              <span>Preferences Saved!</span>
+              <Check className="w-4 h-4 text-emerald-400" />
+              <span>Preferences Saved</span>
             </>
           ) : (
             <>
@@ -251,12 +251,12 @@ export default function SettingsScreen({ onSettingsUpdated }) {
         </button>
 
         {/* Reset Demo Data Button */}
-        <div className="pt-2 text-center">
+        <div className="pt-1 text-center md:col-span-2">
           <button
             type="button"
             onClick={handleResetDemo}
             disabled={resetting}
-            className="text-xs font-bold text-stone-400 hover:text-rose-600 inline-flex items-center gap-1 transition-colors cursor-pointer"
+            className="text-xs font-normal text-stone-400 hover:text-rose-600 inline-flex items-center gap-1 transition-colors cursor-pointer"
           >
             <RotateCcw className="w-3.5 h-3.5" />
             <span>{resetting ? 'Resetting Demo Data...' : 'Reset to Sample Demo Data'}</span>
@@ -266,3 +266,4 @@ export default function SettingsScreen({ onSettingsUpdated }) {
     </div>
   );
 }
+

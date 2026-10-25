@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Clock, Flame, ChefHat, Sparkles, AlertCircle } from 'lucide-react';
+import { Star, Clock, Flame, ChefHat, Sparkles } from 'lucide-react';
 
 export default function RecommendedRecipeBanner({ 
   recipe, 
@@ -12,75 +12,71 @@ export default function RecommendedRecipeBanner({
   const imageUrl = recipe.image_url || "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80";
 
   return (
-    <div className="relative w-full bg-gradient-to-br from-[#FF8A1F] via-[#FF7510] to-[#FF6200] text-white rounded-3xl p-5 shadow-lg overflow-hidden border border-orange-400/30">
-      {/* Decorative ambient radial glow */}
-      <div className="absolute -top-16 -right-16 w-48 h-48 bg-white/15 rounded-full blur-2xl pointer-events-none" />
-      <div className="absolute -bottom-16 -left-16 w-48 h-48 bg-black/10 rounded-full blur-xl pointer-events-none" />
-
+    <div className="w-full bg-white rounded-2xl p-5 border border-stone-200/70 shadow-2xs hover:border-stone-300 transition-all flex flex-col justify-between">
       {/* Top Banner Tag */}
-      <div className="relative flex items-center justify-between mb-2.5">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-[11px] font-bold tracking-wide uppercase border border-white/25">
-          <Sparkles className="w-3.5 h-3.5 text-amber-200 fill-amber-200" />
-          <span>AI Recommended Recipe</span>
+      <div className="flex items-center justify-between mb-3">
+        <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-orange-50 text-orange-700 text-[11px] font-medium border border-orange-200/60">
+          <Sparkles className="w-3 h-3 text-orange-500" />
+          <span>Recommended for Today</span>
         </div>
 
         {/* Cost chip */}
-        <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-black/20 text-white border border-white/10">
+        <span className="text-xs font-semibold px-2 py-0.5 rounded-lg bg-stone-100 text-stone-700">
           ₹{recipe.cost_inr || 220}
         </span>
       </div>
 
-      <div className="relative flex items-center justify-between gap-3">
+      <div className="flex items-center justify-between gap-4">
         {/* Left Information Content */}
-        <div className="flex-1">
-          <h3 className="text-xl font-extrabold tracking-tight leading-snug drop-shadow-sm">
+        <div className="flex-1 min-w-0">
+          <h3 className="text-lg font-bold text-stone-900 tracking-tight leading-snug truncate">
             {recipe.title || "Creamy Mushroom Pasta"}
           </h3>
 
           {/* Metadata badges row */}
-          <div className="flex flex-wrap items-center gap-2 mt-2 text-xs font-semibold text-orange-50">
+          <div className="flex flex-wrap items-center gap-1.5 mt-2 text-xs text-stone-600">
             {/* Star Rating */}
-            <span className="inline-flex items-center gap-1 bg-white/15 px-2 py-0.5 rounded-md backdrop-blur-xs">
-              <Star className="w-3 h-3 text-amber-200 fill-amber-200" />
+            <span className="inline-flex items-center gap-1 bg-stone-50 border border-stone-200/50 px-2 py-0.5 rounded-md font-medium text-stone-700">
+              <Star className="w-3 h-3 text-amber-500 fill-amber-500" />
               <span>{recipe.rating || 4.9}</span>
             </span>
 
             {/* Time */}
-            <span className="inline-flex items-center gap-1 bg-white/15 px-2 py-0.5 rounded-md backdrop-blur-xs">
-              <Clock className="w-3 h-3 text-white" />
+            <span className="inline-flex items-center gap-1 bg-stone-50 border border-stone-200/50 px-2 py-0.5 rounded-md font-medium text-stone-700">
+              <Clock className="w-3 h-3 text-stone-400" />
               <span>{totalTime}m</span>
             </span>
 
             {/* Difficulty */}
-            <span className="inline-flex items-center gap-1 bg-white/15 px-2 py-0.5 rounded-md backdrop-blur-xs">
-              <ChefHat className="w-3 h-3 text-white" />
+            <span className="inline-flex items-center gap-1 bg-stone-50 border border-stone-200/50 px-2 py-0.5 rounded-md font-medium text-stone-700">
+              <ChefHat className="w-3 h-3 text-stone-400" />
               <span>{recipe.difficulty || "Easy"}</span>
             </span>
 
             {/* Calories */}
-            <span className="inline-flex items-center gap-1 bg-white/15 px-2 py-0.5 rounded-md backdrop-blur-xs">
-              <Flame className="w-3 h-3 text-amber-200" />
+            <span className="inline-flex items-center gap-1 bg-stone-50 border border-stone-200/50 px-2 py-0.5 rounded-md font-medium text-stone-700">
+              <Flame className="w-3 h-3 text-orange-500" />
               <span>{recipe.calories || 480} kcal</span>
             </span>
           </div>
 
           {/* Zero-waste highlight line */}
-          <div className="mt-2.5 flex items-center gap-1.5 text-xs text-amber-100 font-medium">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-300 shrink-0" />
-            <span className="italic">Uses ingredients expiring soon</span>
+          <div className="mt-2.5 flex items-center gap-1.5 text-xs text-stone-500">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+            <span>Uses expiring ingredients to reduce waste</span>
           </div>
 
           {/* Buttons: Cook Now & View Recipe */}
-          <div className="flex items-center gap-2.5 mt-4">
+          <div className="flex items-center gap-2 mt-4">
             <button
               onClick={() => onCookNow && onCookNow(recipe)}
-              className="px-4 py-2 bg-white text-[#FF6A00] hover:bg-orange-50 rounded-xl font-bold text-xs shadow-md shadow-orange-900/20 active:scale-95 transition-all cursor-pointer"
+              className="px-3.5 py-1.5 bg-stone-900 hover:bg-stone-800 text-white rounded-lg font-medium text-xs shadow-2xs active:scale-95 transition-all cursor-pointer"
             >
               Cook Now
             </button>
             <button
               onClick={() => onViewRecipe && onViewRecipe(recipe)}
-              className="px-4 py-2 bg-white/15 hover:bg-white/25 text-white border border-white/30 rounded-xl font-semibold text-xs backdrop-blur-sm active:scale-95 transition-all cursor-pointer"
+              className="px-3.5 py-1.5 bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-lg font-medium text-xs active:scale-95 transition-all cursor-pointer"
             >
               View Recipe
             </button>
@@ -88,11 +84,11 @@ export default function RecommendedRecipeBanner({
         </div>
 
         {/* Right Food Photo */}
-        <div className="shrink-0 w-28 h-28 rounded-2xl overflow-hidden shadow-md border-2 border-white/40 group">
+        <div className="shrink-0 w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden shadow-2xs border border-stone-200/60 bg-stone-100 group">
           <img
             src={imageUrl}
             alt={recipe.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             onError={(e) => {
               e.currentTarget.src = "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=400&q=80";
             }}
@@ -102,3 +98,4 @@ export default function RecommendedRecipeBanner({
     </div>
   );
 }
+

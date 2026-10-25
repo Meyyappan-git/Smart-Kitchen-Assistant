@@ -147,24 +147,24 @@ export default function CookingStepsModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/70 backdrop-blur-md animate-fadeIn">
-      <div className="relative w-full max-w-4xl bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col max-h-[92vh] border border-orange-100">
+      <div className="relative w-full max-w-4xl bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[92vh] border border-stone-200/80">
         
         {/* Top Header Bar */}
-        <div className="px-6 py-4 bg-gradient-to-r from-[#FF8A1F] via-[#FF7A10] to-[#FF6A00] text-white flex items-center justify-between shrink-0 shadow-sm">
+        <div className="px-6 py-4 bg-stone-900 text-white flex items-center justify-between shrink-0">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/25">
-              <Utensils className="w-5 h-5 text-white" />
+            <div className="w-9 h-9 rounded-xl bg-stone-800 flex items-center justify-center border border-stone-700">
+              <Utensils className="w-4 h-4 text-stone-200" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="px-2 py-0.5 rounded-full bg-white/20 text-[10px] font-bold uppercase tracking-wider">
+                <span className="px-2 py-0.5 rounded-full bg-stone-800 text-[10px] font-medium uppercase tracking-wider text-stone-300">
                   Live Cooking Mode
                 </span>
-                <span className="text-xs text-orange-100 font-semibold">
+                <span className="text-xs text-stone-400 font-normal">
                   ₹{recipe?.cost_inr || 150} • {recipe?.difficulty || 'Easy'}
                 </span>
               </div>
-              <h2 className="text-lg sm:text-xl font-extrabold tracking-tight leading-tight">
+              <h2 className="text-base sm:text-lg font-bold tracking-tight leading-tight mt-0.5">
                 {recipe?.title || 'Cooking Recipe'}
               </h2>
             </div>
@@ -176,7 +176,7 @@ export default function CookingStepsModal({
                 stopSpeaking();
                 onFinishAndDeduct();
               }}
-              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/20 hover:bg-white/30 text-white rounded-xl text-xs font-bold transition-all cursor-pointer border border-white/30"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 bg-stone-800 hover:bg-stone-700 text-stone-200 rounded-lg text-xs font-medium transition-all cursor-pointer border border-stone-700"
               title="Skip steps and mark as cooked"
             >
               <Check className="w-3.5 h-3.5" />
@@ -187,18 +187,18 @@ export default function CookingStepsModal({
                 stopSpeaking();
                 onClose();
               }}
-              className="w-9 h-9 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition-colors cursor-pointer"
+              className="w-8 h-8 rounded-lg bg-stone-800 hover:bg-stone-700 text-stone-400 hover:text-white flex items-center justify-center transition-colors cursor-pointer"
               aria-label="Exit Cooking Mode"
             >
-              <X className="w-5 h-5" />
+              <X className="w-4 h-4" />
             </button>
           </div>
         </div>
 
         {/* Progress Tracker Bar */}
-        <div className="w-full bg-stone-100 h-2 shrink-0">
+        <div className="w-full bg-stone-100 h-1.5 shrink-0">
           <div 
-            className="h-full bg-gradient-to-r from-emerald-400 to-emerald-500 transition-all duration-500 ease-out"
+            className="h-full bg-stone-900 transition-all duration-300 ease-out"
             style={{ width: `${progressPct}%` }}
           />
         </div>
@@ -211,42 +211,41 @@ export default function CookingStepsModal({
             <div>
               {/* Step counter pill & Read button */}
               <div className="flex items-center justify-between mb-4">
-                <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-orange-100 text-[#FF6A00] font-extrabold text-xs tracking-wide uppercase border border-orange-200">
-                  <Sparkles className="w-3.5 h-3.5" />
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-stone-100 text-stone-700 font-semibold text-xs tracking-wide uppercase">
                   <span>Step {currentStepIndex + 1} of {totalSteps}</span>
                 </span>
 
                 <button
                   type="button"
                   onClick={speakCurrentStep}
-                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                     isSpeaking 
-                      ? 'bg-orange-500 text-white shadow-sm animate-pulse' 
-                      : 'bg-stone-100 hover:bg-orange-50 text-slate-700 hover:text-[#FF6A00]'
+                      ? 'bg-stone-900 text-white' 
+                      : 'bg-stone-100 hover:bg-stone-200 text-stone-700'
                   }`}
                   title="Listen to step hands-free"
                 >
-                  {isSpeaking ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
+                  {isSpeaking ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
                   <span>{isSpeaking ? 'Stop Reading' : 'Read Aloud'}</span>
                 </button>
               </div>
 
               {/* Large Step Text */}
-              <div className="bg-[#FFFBF5] rounded-3xl p-6 border-2 border-orange-100/80 shadow-sm relative">
-                <p className="text-lg sm:text-2xl font-bold text-slate-800 leading-relaxed">
+              <div className="bg-stone-50 rounded-2xl p-6 border border-stone-200/70 relative">
+                <p className="text-lg sm:text-xl font-semibold text-stone-900 leading-relaxed">
                   {steps[currentStepIndex]}
                 </p>
 
                 {/* Friendly Chef Advice */}
-                <div className="mt-5 pt-4 border-t border-orange-100 flex items-start gap-3">
+                <div className="mt-5 pt-4 border-t border-stone-200/60 flex items-start gap-3">
                   <div className="shrink-0 pt-0.5">
-                    <MascotChef variant="avatar" size={36} />
+                    <MascotChef variant="avatar" size={32} />
                   </div>
                   <div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#FF6A00]">
-                      Chef Robot's Tip
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-stone-500">
+                      Chef Tip
                     </span>
-                    <p className="text-xs text-stone-600 font-medium italic mt-0.5">
+                    <p className="text-xs text-stone-600 font-normal italic mt-0.5">
                       "{getChefTip()}"
                     </p>
                   </div>
@@ -260,7 +259,7 @@ export default function CookingStepsModal({
                 type="button"
                 onClick={handlePrev}
                 disabled={currentStepIndex === 0}
-                className="px-5 py-3 rounded-2xl border border-stone-200 hover:bg-stone-50 text-slate-700 font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
+                className="px-4 py-2 rounded-xl border border-stone-200 hover:bg-stone-50 text-stone-700 font-medium text-xs flex items-center gap-1.5 transition-all cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 <ChevronLeft className="w-4 h-4" />
                 <span>Previous Step</span>
@@ -269,17 +268,18 @@ export default function CookingStepsModal({
               <button
                 type="button"
                 onClick={handleNext}
-                className={`px-6 py-3 rounded-2xl font-extrabold text-xs shadow-lg flex items-center gap-2 active:scale-95 transition-all cursor-pointer ${
+                className={`px-5 py-2.5 rounded-xl font-medium text-xs flex items-center gap-1.5 active:scale-95 transition-all cursor-pointer ${
                   isFinalStep
-                    ? 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-emerald-600/30'
-                    : 'bg-gradient-to-r from-[#FF8A1F] to-[#FF6A00] hover:from-[#FF7A10] hover:to-[#EA580C] text-white shadow-orange-500/25'
+                    ? 'bg-emerald-700 hover:bg-emerald-800 text-white shadow-2xs'
+                    : 'bg-stone-900 hover:bg-stone-800 text-white shadow-2xs'
                 }`}
               >
-                <span>{isFinalStep ? 'Finish & Deduct from Fridge ✨' : 'Next Step'}</span>
+                <span>{isFinalStep ? 'Finish & Deduct from Fridge' : 'Next Step'}</span>
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
           </div>
+
 
           {/* Right Column: Interactive Kitchen Timer & Ingredients Checklist (5 cols on desktop) */}
           <div className="md:col-span-5 space-y-5 flex flex-col justify-between">

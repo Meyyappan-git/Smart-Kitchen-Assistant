@@ -56,31 +56,31 @@ export default function RecipesScreen({
   ];
 
   return (
-    <div className="p-4 flex flex-col gap-4 pb-12">
+    <div className="flex flex-col gap-5 pb-12">
       {/* Screen Header */}
       <div>
-        <h1 className="text-xl font-extrabold text-slate-900 tracking-tight">
-          Smart Recipe Catalog
+        <h1 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight">
+          Recipe Catalog
         </h1>
-        <p className="text-xs text-stone-500 font-medium mt-0.5">
+        <p className="text-xs text-stone-500 font-normal mt-0.5">
           Sorted by ingredients currently in your fridge
         </p>
       </div>
 
       {/* Search Bar */}
       <form onSubmit={handleSearchSubmit} className="relative w-full">
-        <div className="flex items-center bg-white rounded-2xl border border-stone-200 shadow-xs px-3.5 py-2.5 focus-within:border-[#FF6A00]">
+        <div className="flex items-center bg-white rounded-xl border border-stone-200/70 shadow-2xs px-3.5 py-2.5 focus-within:border-stone-400 focus-within:ring-2 focus-within:ring-stone-200/60">
           <Search className="w-4 h-4 text-stone-400 mr-2 shrink-0" />
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search recipes, ingredients, cuisines..."
-            className="w-full text-xs text-slate-800 placeholder:text-stone-400 focus:outline-none bg-transparent"
+            className="w-full text-xs sm:text-sm text-stone-800 placeholder:text-stone-400 focus:outline-none bg-transparent"
           />
           <button
             type="submit"
-            className="text-xs font-bold text-[#FF6A00] ml-2 px-2 py-0.5 rounded-lg hover:bg-orange-50 cursor-pointer"
+            className="text-xs font-medium text-stone-700 ml-2 px-2.5 py-1 rounded-lg hover:bg-stone-100 cursor-pointer transition-colors"
           >
             Search
           </button>
@@ -91,15 +91,15 @@ export default function RecipesScreen({
       <div className="space-y-2">
         {/* Diet Chips */}
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-          <span className="text-[10px] font-bold uppercase text-stone-400 mr-1 shrink-0">Diet:</span>
+          <span className="text-[10px] font-semibold uppercase text-stone-400 mr-1 shrink-0">Diet:</span>
           {dietChips.map((chip) => (
             <button
               key={chip}
               onClick={() => setDiet(chip)}
-              className={`px-3 py-1 rounded-full text-xs font-semibold shrink-0 transition-all cursor-pointer ${
+              className={`px-3 py-1 rounded-lg text-xs font-medium shrink-0 transition-all cursor-pointer ${
                 diet === chip
-                  ? 'bg-[#FF6A00] text-white shadow-xs'
-                  : 'bg-white text-stone-600 border border-stone-200 hover:border-orange-200'
+                  ? 'bg-stone-900 text-white shadow-2xs'
+                  : 'bg-white text-stone-600 border border-stone-200/70 hover:border-stone-300'
               }`}
             >
               {chip}
@@ -109,15 +109,15 @@ export default function RecipesScreen({
 
         {/* Meal Category Chips */}
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-          <span className="text-[10px] font-bold uppercase text-stone-400 mr-1 shrink-0">Meal:</span>
+          <span className="text-[10px] font-semibold uppercase text-stone-400 mr-1 shrink-0">Meal:</span>
           {categoryChips.map((chip) => (
             <button
               key={chip}
               onClick={() => setCategory(chip)}
-              className={`px-3 py-1 rounded-full text-xs font-semibold shrink-0 transition-all cursor-pointer ${
+              className={`px-3 py-1 rounded-lg text-xs font-medium shrink-0 transition-all cursor-pointer ${
                 category === chip
-                  ? 'bg-slate-800 text-white shadow-xs'
-                  : 'bg-white text-stone-600 border border-stone-200 hover:border-slate-300'
+                  ? 'bg-stone-900 text-white shadow-2xs'
+                  : 'bg-white text-stone-600 border border-stone-200/70 hover:border-stone-300'
               }`}
             >
               {chip}
@@ -133,8 +133,8 @@ export default function RecipesScreen({
               onClick={() => setMaxTime(chip.value)}
               className={`px-2.5 py-1 rounded-lg text-[11px] font-medium shrink-0 transition-all cursor-pointer ${
                 maxTime === chip.value
-                  ? 'bg-amber-100 text-amber-900 border border-amber-300 font-bold'
-                  : 'bg-stone-50 text-stone-600 border border-stone-200'
+                  ? 'bg-stone-800 text-white shadow-2xs'
+                  : 'bg-white text-stone-600 border border-stone-200/70'
               }`}
             >
               {chip.label}
@@ -147,8 +147,8 @@ export default function RecipesScreen({
               onClick={() => setMaxBudget(chip.value)}
               className={`px-2.5 py-1 rounded-lg text-[11px] font-medium shrink-0 transition-all cursor-pointer ${
                 maxBudget === chip.value
-                  ? 'bg-emerald-100 text-emerald-900 border border-emerald-300 font-bold'
-                  : 'bg-stone-50 text-stone-600 border border-stone-200'
+                  ? 'bg-stone-800 text-white shadow-2xs'
+                  : 'bg-white text-stone-600 border border-stone-200/70'
               }`}
             >
               {chip.label}
@@ -159,16 +159,16 @@ export default function RecipesScreen({
 
       {/* Recipes Cards List / Grid */}
       {loading ? (
-        <div className="space-y-3">
-          {[1, 2, 3, 4].map((n) => (
-            <div key={n} className="h-32 bg-white rounded-2xl animate-pulse border border-stone-100" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[1, 2, 3, 4, 5, 6].map((n) => (
+            <div key={n} className="h-32 bg-white rounded-xl animate-pulse border border-stone-200/60" />
           ))}
         </div>
       ) : recipes.length === 0 ? (
-        <div className="text-center py-12 bg-white rounded-3xl border border-stone-100 p-6">
+        <div className="text-center py-16 bg-white rounded-2xl border border-stone-200/70 p-6">
           <Utensils className="w-10 h-10 mx-auto text-stone-300 mb-2" />
-          <h3 className="text-sm font-bold text-slate-800">No matching recipes found</h3>
-          <p className="text-xs text-stone-500 mt-1 mb-4">Try relaxing your diet, budget, or cooking time filters.</p>
+          <h3 className="text-sm font-semibold text-stone-800">No matching recipes found</h3>
+          <p className="text-xs text-stone-400 mt-1 mb-4">Try relaxing your diet, budget, or cooking time filters.</p>
           <button
             onClick={() => {
               setDiet('All');
@@ -177,7 +177,7 @@ export default function RecipesScreen({
               setMaxBudget(null);
               setSearch('');
             }}
-            className="px-4 py-2 bg-[#FF6A00] text-white rounded-xl text-xs font-bold cursor-pointer"
+            className="px-4 py-2 bg-stone-900 hover:bg-stone-800 text-white rounded-xl text-xs font-medium cursor-pointer transition-colors"
           >
             Reset Filters
           </button>
@@ -193,10 +193,10 @@ export default function RecipesScreen({
               <div
                 key={recipe.id}
                 onClick={() => onSelectRecipe(recipe)}
-                className="bg-white rounded-2xl p-3 border border-stone-100 shadow-sm hover:shadow-md transition-all cursor-pointer flex gap-3.5 group"
+                className="bg-white rounded-xl p-3 border border-stone-200/70 shadow-2xs hover:border-stone-300 transition-all cursor-pointer flex gap-3.5 group"
               >
                 {/* Food Image */}
-                <div className="relative w-28 h-28 rounded-xl overflow-hidden shrink-0 bg-stone-100">
+                <div className="relative w-28 h-28 rounded-lg overflow-hidden shrink-0 bg-stone-100">
                   <img
                     src={imgUrl}
                     alt={recipe.title}
@@ -206,42 +206,42 @@ export default function RecipesScreen({
                     }}
                   />
                   {/* % Available Badge */}
-                  <div className={`absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded text-[10px] font-extrabold text-white shadow-xs ${
-                    availablePct >= 75 ? 'bg-emerald-600' : availablePct >= 40 ? 'bg-amber-600' : 'bg-slate-700'
+                  <div className={`absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded text-[10px] font-medium text-white shadow-2xs ${
+                    availablePct >= 75 ? 'bg-emerald-600/90' : availablePct >= 40 ? 'bg-amber-600/90' : 'bg-stone-700/90'
                   }`}>
-                    {availablePct}%
+                    {availablePct}% ready
                   </div>
                 </div>
 
                 {/* Details */}
-                <div className="flex-1 flex flex-col justify-between py-0.5">
+                <div className="flex-1 flex flex-col justify-between py-0.5 min-w-0">
                   <div>
-                    <div className="flex items-center justify-between text-[11px] text-stone-500 font-semibold mb-0.5">
-                      <span className="uppercase text-[10px] text-[#FF6A00] font-bold">{recipe.cuisine}</span>
-                      <span className="flex items-center gap-1 text-slate-700">
+                    <div className="flex items-center justify-between text-[11px] text-stone-500 font-medium mb-0.5">
+                      <span className="uppercase text-[10px] text-orange-600 font-semibold">{recipe.cuisine}</span>
+                      <span className="flex items-center gap-1 text-stone-700">
                         <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
                         {recipe.rating || 4.8}
                       </span>
                     </div>
 
-                    <h3 className="text-sm font-bold text-slate-900 leading-snug group-hover:text-[#FF6A00] transition-colors line-clamp-1">
+                    <h3 className="text-xs sm:text-sm font-semibold text-stone-900 leading-snug group-hover:text-orange-600 transition-colors line-clamp-1">
                       {recipe.title}
                     </h3>
 
-                    <p className="text-[11px] text-stone-500 line-clamp-1 mt-0.5">
+                    <p className="text-[11px] text-stone-400 line-clamp-1 mt-0.5">
                       {recipe.description}
                     </p>
                   </div>
 
                   {/* Metadata & Actions */}
-                  <div className="flex items-center justify-between pt-2 border-t border-stone-50 mt-1">
-                    <div className="flex items-center gap-2 text-[11px] text-stone-500 font-medium">
+                  <div className="flex items-center justify-between pt-2 border-t border-stone-100 mt-1">
+                    <div className="flex items-center gap-2 text-[11px] text-stone-500 font-normal">
                       <span className="flex items-center gap-0.5">
                         <Clock className="w-3 h-3 text-stone-400" />
                         {totalTime}m
                       </span>
                       <span>•</span>
-                      <span className="font-bold text-slate-800">
+                      <span className="font-semibold text-stone-800">
                         ₹{recipe.cost_inr}
                       </span>
                     </div>
@@ -251,7 +251,7 @@ export default function RecipesScreen({
                         e.stopPropagation();
                         onCookRecipe(recipe);
                       }}
-                      className="px-2.5 py-1 bg-orange-50 hover:bg-[#FF6A00] text-[#FF6A00] hover:text-white rounded-lg text-xs font-bold transition-all cursor-pointer active:scale-95 border border-orange-200"
+                      className="px-2.5 py-1 bg-stone-900 hover:bg-stone-800 text-white rounded-lg text-xs font-medium transition-all cursor-pointer active:scale-95"
                     >
                       Cook Now
                     </button>
@@ -265,3 +265,4 @@ export default function RecipesScreen({
     </div>
   );
 }
+

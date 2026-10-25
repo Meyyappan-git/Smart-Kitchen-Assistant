@@ -31,8 +31,8 @@ export default function HomeScreen({
   };
 
   return (
-    <div className="flex flex-col gap-5 pb-10">
-      {/* 1. Orange Header (Desktop & Mobile) */}
+    <div className="flex flex-col gap-6 pb-12">
+      {/* 1. Minimal Header Greeting */}
       <Header
         greeting={overviewData?.greeting || "Good Morning, Alex"}
         currentDate={overviewData?.current_date || "Sat, 24 Oct"}
@@ -43,81 +43,79 @@ export default function HomeScreen({
         onAvatarClick={() => onSelectTab('settings')}
       />
 
-      {/* Main Container */}
-      <div className="px-4 sm:px-6 flex flex-col gap-5">
-        {/* Expiry Alert Warning Banner if items are expiring */}
-        {overviewData?.urgent_alerts_count > 0 && (
-          <ExpiryAlertBanner
-            urgentCount={overviewData.urgent_alerts_count}
-            pantryItems={pantryItems || []}
-            onPlanMeals={() => onSelectTab('planner')}
-          />
-        )}
-
-        {/* 3. Search Bar with Mic and Camera Photo Scan */}
-        <div className="w-full">
-          <SearchBar
-            value={searchQuery}
-            onChange={setSearchQuery}
-            onSearch={handleSearch}
-            onOpenPhotoScan={onOpenPhotoScan}
-            placeholder="Search ingredients in your fridge..."
-          />
-        </div>
-
-        {/* Desktop 2-Column Row: "My Fridge" Card + "AI Recommended Recipe" Banner */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
-          {/* Left Column on Desktop (5 cols): My Fridge Card */}
-          <div className="lg:col-span-5 flex">
-            <FridgeCard
-              fridgeSummary={overviewData?.fridge_summary}
-              onViewAllPantry={() => onSelectTab('pantry')}
-              onSelectCategory={(cat) => {
-                onSearchPantry(cat);
-                onSelectTab('pantry');
-              }}
-            />
-          </div>
-
-          {/* Right Column on Desktop (7 cols): AI Recommended Recipe Banner */}
-          <div className="lg:col-span-7 flex">
-            <RecommendedRecipeBanner
-              recipe={overviewData?.recommended_recipe}
-              onCookNow={onCookRecipe}
-              onViewRecipe={onSelectRecipe}
-            />
-          </div>
-        </div>
-
-        {/* 4. "Available Ingredients" Grid (scales up to 8 columns on desktop) */}
-        <AvailableIngredients
-          items={pantryItems || overviewData?.available_preview || []}
-          onViewAll={() => onSelectTab('pantry')}
-          onDeleteItem={onDeleteItem}
-          onEditItem={onEditItem}
+      {/* Expiry Alert Warning Banner if items are expiring */}
+      {overviewData?.urgent_alerts_count > 0 && (
+        <ExpiryAlertBanner
+          urgentCount={overviewData.urgent_alerts_count}
+          pantryItems={pantryItems || []}
+          onPlanMeals={() => onSelectTab('planner')}
         />
+      )}
 
-        {/* Desktop 2-Column Row: "More Recipes for You" + "Smart Suggestions" */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
-          {/* Left: More Recipes */}
-          <div className="lg:col-span-7">
-            <MoreRecipesRow
-              recipes={overviewData?.more_recipes || []}
-              onSeeAll={() => onSelectTab('recipes')}
-              onSelectRecipe={onSelectRecipe}
-            />
-          </div>
+      {/* 2. Minimalist Search Bar */}
+      <div className="w-full">
+        <SearchBar
+          value={searchQuery}
+          onChange={setSearchQuery}
+          onSearch={handleSearch}
+          onOpenPhotoScan={onOpenPhotoScan}
+          placeholder="Search ingredients in your fridge..."
+        />
+      </div>
 
-          {/* Right: Smart Suggestions Card with Mascot */}
-          <div className="lg:col-span-5 flex">
-            <SmartSuggestions
-              suggestions={overviewData?.smart_suggestions || []}
-              onOpenPlanner={() => onSelectTab('planner')}
-              onOpenShopping={() => onSelectTab('shopping')}
-            />
-          </div>
+      {/* 3. 2-Column Row: Pantry Overview + Recommended Recipe */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+        {/* Left Column on Desktop (5 cols): Fridge Overview */}
+        <div className="lg:col-span-5 flex">
+          <FridgeCard
+            fridgeSummary={overviewData?.fridge_summary}
+            onViewAllPantry={() => onSelectTab('pantry')}
+            onSelectCategory={(cat) => {
+              onSearchPantry(cat);
+              onSelectTab('pantry');
+            }}
+          />
+        </div>
+
+        {/* Right Column on Desktop (7 cols): Recommended Recipe */}
+        <div className="lg:col-span-7 flex">
+          <RecommendedRecipeBanner
+            recipe={overviewData?.recommended_recipe}
+            onCookNow={onCookRecipe}
+            onViewRecipe={onSelectRecipe}
+          />
+        </div>
+      </div>
+
+      {/* 4. Available Ingredients Grid */}
+      <AvailableIngredients
+        items={pantryItems || overviewData?.available_preview || []}
+        onViewAll={() => onSelectTab('pantry')}
+        onDeleteItem={onDeleteItem}
+        onEditItem={onEditItem}
+      />
+
+      {/* 5. 2-Column Row: More Recipes + Smart Suggestions */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+        {/* Left: More Recipes */}
+        <div className="lg:col-span-7">
+          <MoreRecipesRow
+            recipes={overviewData?.more_recipes || []}
+            onSeeAll={() => onSelectTab('recipes')}
+            onSelectRecipe={onSelectRecipe}
+          />
+        </div>
+
+        {/* Right: Smart Suggestions Card */}
+        <div className="lg:col-span-5 flex">
+          <SmartSuggestions
+            suggestions={overviewData?.smart_suggestions || []}
+            onOpenPlanner={() => onSelectTab('planner')}
+            onOpenShopping={() => onSelectTab('shopping')}
+          />
         </div>
       </div>
     </div>
   );
 }
+
